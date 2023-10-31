@@ -281,7 +281,7 @@
 	can_remove = 0
 	can_charge = 0
 	selfcharge = 1
-	selfchargerate = 15
+	selfchargerate = 20
 	icon_state = "rechargerpistol"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/breeder
@@ -405,7 +405,7 @@
 	can_charge = 0
 	can_remove = 0 // If it self-charges, you can't remove it.
 	selfcharge = 1
-	selfchargerate = 15 // 15*2 seconds to refill the cell
+	selfchargerate = 20 // X*2 seconds to refill the cell
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
 	weapon_class = WEAPON_CLASS_SMALL
@@ -619,7 +619,7 @@
 	can_remove = 0
 	can_charge = 0
 	selfcharge = 1
-	selfchargerate = 15
+	selfchargerate = 20
 
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	weapon_class = WEAPON_CLASS_RIFLE
@@ -1181,7 +1181,7 @@
 	can_flashlight = 0
 	can_scope = FALSE
 	selfcharge = 1
-	selfchargerate = 20
+	selfchargerate = 25
 	init_recoil = LASER_HANDGUN_RECOIL(2, 1)
 
 /* * * * * *
@@ -1197,7 +1197,7 @@
 	icon_state = "nucpistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/tg/nuclear)
-	selfchargerate = 15
+	selfchargerate = 20
 	var/fail_tick = 0
 	var/fail_chance = 0
 
@@ -1263,7 +1263,7 @@
 	flight_y_offset = 10
 	can_scope = TRUE
 	selfcharge = 1
-	selfchargerate = 15
+	selfchargerate = 25
 	init_recoil = AUTOCARBINE_RECOIL(1, 1)
 	init_firemodes = list(
 		/datum/firemode/burst/two,
