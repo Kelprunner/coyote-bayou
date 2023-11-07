@@ -211,7 +211,6 @@
 		/obj/item/gun/ballistic/automatic/varmint = 10,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 10,
 		/obj/item/gun/ballistic/automatic/pistol/deagle= 10,
-		/obj/item/gun/ballistic/automatic/pistol/type17 = 10,
 		/obj/item/gun/ballistic/automatic/pistol/beretta/carbine = 4,
 		/obj/item/gun/ballistic/automatic/sportcarbine = 4,
 		/obj/item/gun/ballistic/automatic/smg/mini_uzi/smg22 = 4,
@@ -226,7 +225,6 @@
 		/obj/item/gun/ballistic/automatic/pistol/beretta/automatic = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil/skorpion = 2,
 		/obj/item/gun/ballistic/automatic/smg/mini_uzi/smg22/tec22 = 2,
-		/obj/item/gun/ballistic/automatic/pistol/ninemil/ruby = 2,
 		/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
 		/obj/item/gun/ballistic/automatic/smg/smg10mm/worn = 1,
 		/obj/item/gun/ballistic/automatic/assault_carbine/policerifle = 1,
@@ -241,12 +239,12 @@
 	loot = list(
 		/obj/item/gun/ballistic/automatic/matildar = 10,
 		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 10,
-		/obj/item/gun/ballistic/automatic/smg/mini_uzi/mp5 = 10,
 		/obj/item/gun/ballistic/automatic/smg/american180 = 10,
 		/obj/item/gun/ballistic/automatic/ak556 = 10,
 		/obj/item/gun/ballistic/automatic/service = 10,
 		/obj/item/gun/ballistic/automatic/pistol/schmeisser = 10,
 		/obj/item/gun/ballistic/automatic/service/r82 = 10, //is weakest 5.56 automatic
+		/obj/item/gun/ballistic/automatic/assault_carbine/psg5mm = 10,
 		/obj/item/gun/ballistic/automatic/smg/sidewinder = 4,
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 4,
 		/obj/item/gun/ballistic/automatic/combat = 4,
@@ -264,9 +262,8 @@
 		/obj/item/gun/ballistic/automatic/rangemaster = 1,
 		/obj/item/gun/ballistic/automatic/hobo/destroyer = 1,
 		/obj/item/gun/ballistic/automatic/slr = 1,
-		/obj/item/gun/ballistic/automatic/m1garand/sks = 1,
 		/obj/item/gun/ballistic/automatic/assault_carbine/psg5mm = 10,
-		/obj/item/gun/ballistic/automatic/gewehr41civ = 4,
+		/obj/item/gun/ballistic/automatic/m1garand/sks = 1,
 		// /obj/item/gun/ballistic/rifle/hunting/obrez = 1, // Commenting out until the sprite is fixed.
 		// /obj/item/gun/ballistic/automatic/wt550/worn = 1, // Commenting out until the sprite is fixed.
 	)
@@ -277,17 +274,18 @@
 		/obj/item/gun/ballistic/automatic/fnfal/ak47 = 10,
 		/obj/item/gun/ballistic/automatic/smg/cg45 = 10,
 		/obj/item/gun/ballistic/automatic/smg/p90 = 10,
-		/obj/item/gun/ballistic/automatic/smg/mp5 = 10,
+		/obj/item/gun/ballistic/automatic/smg/mini_uzi/mp5 = 10, // bonus damage means rarer
 		/obj/item/gun/ballistic/automatic/type93 = 10,
 		/obj/item/gun/ballistic/automatic/lsw = 10,
 		/obj/item/gun/ballistic/automatic/unmcamr = 10,
 		/obj/item/gun/ballistic/automatic/assault_carbine/m5a1 = 10,
 		/obj/item/gun/ballistic/automatic/assault_carbine/scarrifle = 10,
-		/obj/item/gun/ballistic/automatic/assault_carbine/aug5mm = 9,
+		/obj/item/gun/ballistic/automatic/assault_carbine/aug5mm = 4,
+		/obj/item/gun/ballistic/automatic/smg/mp5 = 4, // MP5SD, what the fuck are these item paths?
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 4,
 		/obj/item/gun/ballistic/automatic/assault_rifle = 4,
 		/obj/item/gun/ballistic/automatic/r93 = 4,
-	    /obj/item/gun/ballistic/automatic/concussive = 4,
+		/obj/item/gun/ballistic/automatic/concussive = 4,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 4,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14/compact = 1,
 		/obj/item/gun/ballistic/rifle/mag/antimateriel = 1,
@@ -298,7 +296,6 @@
 		/obj/item/gun/ballistic/automatic/fnfal = 1,
 		/obj/item/gun/ballistic/automatic/rpd = 1,
 		/obj/item/gun/ballistic/automatic/aksmol = 1,
-		/obj/item/gun/ballistic/automatic/gewehr43 = 4,
 		// /obj/item/gun/ballistic/automatic/wt550 = 2, // Commenting out until the sprite is fixed.
 
 	)
@@ -334,6 +331,8 @@
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil/c93 = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil/c93/luger = 1,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil/ruby = 4,
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 10,
 	)
 
 /obj/effect/spawner/lootdrop/f13/uncommon_cowboy
@@ -350,13 +349,17 @@
 		/obj/item/gun/ballistic/revolver/colt357/auto = 4,
 		/obj/item/gun/ballistic/automatic/smg/mini_uzi/mp40 = 4,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever/stock = 4,
+		/obj/item/gun/ballistic/automatic/gewehr43 = 4,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
 		/obj/item/gun/ballistic/bow/longbow = 4,
 		/obj/item/gun/ballistic/bow/crossbow = 4,
 		/obj/item/gun/ballistic/automatic/m1garand = 4,
 		/obj/item/m2flamethrowertank = 1,
 		/obj/item/gun/ballistic/automatic/m1carbine/m2 = 1,
-		// /obj/item/gun/ballistic/bow/compositebow = 1,  // I do not know the difference between this and the recurve.
+		/obj/item/gun/ballistic/automatic/gewehr41civ = 4,
+		/obj/item/gun/ballistic/automatic/gewehr43 = 4,
+		/obj/item/gun/ballistic/automatic/m1garand/sks = 4,
+		// /obj/item/gun/ballistic/bow/compositebow = 1, // I do not know the difference between this and the recurve.
 	)
 
 /obj/effect/spawner/lootdrop/f13/rare_cowboy
@@ -366,18 +369,18 @@
 		/obj/item/gun/ballistic/automatic/c96auto = 10,
 		/obj/item/gun/ballistic/revolver/sequoia = 10,
 		/obj/item/gun/ballistic/rifle/repeater/brush = 10,
-		/obj/item/gun/ballistic/rifle/mosin/laserbubba = 10, // for the meme
 		/obj/item/gun/ballistic/automatic/smg/greasegun = 10,
 		/obj/item/gun/energy/kinetic_accelerator/crossbow = 4, // ebow
+		/obj/item/gun/ballistic/automatic/gewehr41civ = 4,
 		/obj/item/gun/ballistic/bow/compoundbow = 4,
 		/obj/item/gun/ballistic/rifle/mag/boys = 4,
 		/obj/item/gun/ballistic/automatic/bar = 4,
 		/obj/item/gun/ballistic/automatic/smg/tommygun = 4,
+		/obj/item/gun/ballistic/rifle/mosin/laserbubba = 4, // for the meme
 		/obj/item/gun/ballistic/automatic/lewis = 1,
 		/obj/item/gun/ballistic/automatic/smg/ppsh = 1,
-		/obj/item/gun/energy/kinetic_accelerator/crossbow/large = 1,  // big ebow
+		/obj/item/gun/energy/kinetic_accelerator/crossbow/large = 1, // big ebow
 	)
-
 ///////////////////////////
 ///melee weapon spawners///
 ///////////////////////////
@@ -610,7 +613,8 @@
 		/obj/item/melee/transforming/plasmacutter/sword/cx = 4,
 		/obj/item/gun/energy/laser/tg/recharger = 4,
 		/obj/item/gun/energy/laser/wattz2ks = 4,
-		/obj/item/gun/ballistic/automatic/recoilessrifle = 1,
+		/obj/item/gun/ballistic/automatic/smg/vss = 4,
+		// /obj/item/gun/ballistic/automatic/recoilessrifle = 1, //Will ask community on ideas of a revamped recoiless rifle. Needs a complete overhaul of its niche abilities.
 		/obj/item/gun/ballistic/automatic/smg/american180/b180 = 1,
 		/obj/item/gun/energy/laser/wattz/recharger = 1,
 		/obj/item/sord = 1,
@@ -649,7 +653,7 @@
 		/obj/item/gun/energy/laser/tg/particlecannon = 1, // old tesla cannon was kind of... bad. In several ways.
 		/obj/item/melee/onehanded/dragonfire = 1, //edgy
 		/obj/item/sord = 1, //for the meme
-		/obj/item/gun/ballistic/automatic/compact14mmrifle = 1,
+		/obj/item/gun/ballistic/automatic/compact14mmrifle = 4,
 		/obj/item/gun/ballistic/fatman = 0.5,
 	)
 
