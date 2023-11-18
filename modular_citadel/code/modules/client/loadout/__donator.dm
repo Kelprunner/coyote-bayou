@@ -681,6 +681,14 @@
 	new /obj/item/voodoo(src)
 	new /obj/item/clothing/mask/chameleon(src)
 
+/datum/gear/donator/kits/jaeger
+	name = "Huntress Customs"
+	path = /obj/item/storage/box/large/custom_kit/jaeger
+	ckeywhitelist = list("kilment")
+
+/obj/item/storage/box/large/custom_kit/jaeger/PopulateContents()
+	new /obj/item/gun/ballistic/rifle/hebe(src)
+
 /datum/gear/donator/kits/jaggachi
 	name = "Scug Industries Kit"
 	path = /obj/item/storage/box/large/custom_kit/jaggachi
@@ -1354,6 +1362,7 @@
 	new /obj/item/gun/ballistic/automatic/pistol/ninemil/maria(src)
 	new /obj/item/gun/ballistic/automatic/pistol/n99/crusader/thingpony(src)
 	new /obj/item/clothing/neck/customfleur(src)
+	new /obj/item/clothing/under/tribalcustom(src)
 
 /datum/gear/donator/kits/tk420634
 	name = "Casey's 'Business' Bundle"
