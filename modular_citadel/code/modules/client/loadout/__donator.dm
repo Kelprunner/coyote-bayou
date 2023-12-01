@@ -763,7 +763,7 @@
 	new /obj/item/clothing/suit/armor/light/duster/russian_coat(src)
 	new /obj/item/clothing/suit/armor/medium/heavierballisticvest/rusvest2(src)
 	new /obj/item/clothing/head/kevlarhelmet/rus1(src)
-	new /obj/item/gun/energy/laser/LaserAK/jaggi(src)
+	new /obj/item/gun/energy/laser/LaserAK/worn/jaggi(src)
 
 
 /datum/gear/donator/kits/jaggachi_7
@@ -1415,6 +1415,7 @@
 	new /obj/item/gun/ballistic/automatic/pistol/n99/crusader/thingpony(src)
 	new /obj/item/clothing/neck/customfleur(src)
 	new /obj/item/clothing/under/tribalcustom(src)
+	new /obj/item/clothing/under/tribaliris(src)
 
 /datum/gear/donator/kits/tk420634
 	name = "Casey's 'Business' Bundle"
