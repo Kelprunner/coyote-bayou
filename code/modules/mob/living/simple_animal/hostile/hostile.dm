@@ -128,6 +128,8 @@
 	/// timer for despawning when lonely
 	var/lonely_timer_id
 
+	speed = 3//The default hostile mob speed. If you ever speed the mob ss again please raise this to compensate.
+
 /mob/living/simple_animal/hostile/Initialize(mapload)
 	. = ..()
 	set_origin(src)
@@ -556,8 +558,12 @@
 			minimum_distance = 1
 		else
 			minimum_distance = vary_from_list(variation_list[MOB_MINIMUM_DISTANCE])
-	if(variation_list[MOB_VARIED_SPEED_CHANCE] && LAZYLEN(variation_list[MOB_VARIED_SPEED]) && prob(variation_list[MOB_VARIED_SPEED_CHANCE]))
-		move_to_delay = vary_from_list(variation_list[MOB_VARIED_SPEED])
+	if(variation_list[MOB_VARIED_SPEED_CHANCE] && LAZYLEN(variation_list[MOB_VARIED_SPEED]))
+		if(prob(variation_list[MOB_VARIED_SPEED_CHANCE]))
+			move_to_delay = vary_from_list(variation_list[MOB_VARIED_SPEED])
+		if(prob(variation_list[MOB_VARIED_SPEED_CHANCE]))
+			set_varspeed(pick(variation_list[MOB_VARIED_SPEED]))
+
 
 /mob/living/simple_animal/hostile/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
 	. = ..()

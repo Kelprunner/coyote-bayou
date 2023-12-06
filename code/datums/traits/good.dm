@@ -768,10 +768,12 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 
 /datum/quirk/nukalover
 	name = "Cola Fiend"
-	desc = "You are a fan of America's most popular pre-war soft drink. Your body simply loves the sugary drink so much, it rejects healtheir alternatives. Cosmic Cola heals you, sort of."
-	value = 14
+	desc = "You just can't get enough of that hyper-sweetened, tooth-rotting, waistline-widening, pancreas-pummeling sodapop! \
+		So much so that your body has adapted to the sugars and artificial flavorings, processing those calories into healing energy. \
+		Won't do much for that waistline, though."
+	value = 22
 	category = "Food Quirks"
-	mechanics = "You heal slowly when intaking Cosmic Cola."
+	mechanics = "Various sodapop-derived drinks will provide (usually minor) healing, typically based on their complexity."
 	conflicts = list(
 		/datum/quirk/vegetarian,
 		/datum/quirk/no_taste,
@@ -2157,7 +2159,7 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	name = "Shocking Grasp"
 	desc = "You know how to cast the shocking grasp cantrip"
 	value = 32
-	category = "Cantrips"
+	category = "Magic Quirks"
 	mechanics = "When using the *shocking emote, you summon a melee spell cantrip that strikes fast and delivers powerful shocks to your foes"
 	conflicts = list(
 		/datum/quirk/littleleagues,
@@ -2171,8 +2173,8 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 /datum/quirk/telepathy
 	name = "Innate Telepathy"
 	desc = "You innately have the ability to project your thoughts directly into the minds of others."
-	value = 20 //A good chunk of the cost of being mute, if you decide to take both.
-	category = "Cantrips"
+	value = 12 //A good chunk of the cost of being mute, if you decide to take both. Mostly an RP quick as well, so somewhat cheap. You have to pay 1 of your 6 good quirk slots for it.
+	category = "Magic Quirks"
 	mechanics = "You can use a telepathy spell to speak to others' minds directly. However, you and your target will glow so it's quite obvious you casted it."
 	conflicts = list(
 
