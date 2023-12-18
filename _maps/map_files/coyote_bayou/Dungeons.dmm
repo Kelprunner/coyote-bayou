@@ -2410,6 +2410,11 @@
 /obj/structure/simple_door/bunker,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker/bighornbunker)
+"bfm" = (
+/obj/machinery/light/small,
+/obj/structure/table/wood/poker,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "bfn" = (
 /obj/structure/chair/stool/retro/black,
 /obj/effect/decal/cleanable/dirt,
@@ -3427,6 +3432,28 @@
 /obj/structure/obstacle/old_locked_door,
 /obj/effect/gluttony,
 /turf/open/floor/wood_fancy/wood_fancy_dark,
+/area/f13/building)
+"bDW" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 0;
+	pixel_x = 19
+	},
+/obj/machinery/shower{
+	pixel_y = 16;
+	layer = 4.9
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#BBBBBB"
+	},
 /area/f13/building)
 "bEj" = (
 /turf/open/floor/circuit/f13_blue,
@@ -4979,6 +5006,10 @@
 	},
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/operations)
+"cqY" = (
+/obj/machinery/sleeper/clockwork,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "cre" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider/junker/creator,
@@ -6358,6 +6389,21 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/medical)
+"cRb" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/machinery/shower{
+	pixel_y = 16;
+	layer = 4.9
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#BBBBBB"
+	},
+/area/f13/building)
 "cRg" = (
 /mob/living/simple_animal/hostile/renegade/soldier,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -6664,6 +6710,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/leisure)
+"cYq" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "cYC" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -13943,6 +13998,37 @@
 	icon_state = "greendirtyfull"
 	},
 /area/f13/building)
+"ggv" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 0;
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#BBBBBB"
+	},
+/area/f13/building)
 "ggK" = (
 /obj/machinery/chem_dispenser/drinks,
 /obj/structure/table/wood,
@@ -14371,6 +14457,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker/bighornbunker)
+"gsz" = (
+/obj/machinery/clonepod{
+	internal_radio = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "gsI" = (
 /mob/living/simple_animal/hostile/enclave/scientist,
 /turf/open/floor/plasteel/f13/vault_floor/white,
@@ -14557,6 +14649,15 @@
 "gxN" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
+/area/f13/building)
+"gxQ" = (
+/obj/structure/simple_door/bunker/glass,
+/obj/structure/curtain{
+	color = "red"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor{
+	icon_state = "floordirty"
+	},
 /area/f13/building)
 "gyj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -17191,6 +17292,23 @@
 /mob/living/simple_animal/hostile/skeleton,
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
+"hKS" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#BBBBBB"
+	},
+/area/f13/building)
 "hKY" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "stockpilebunker";
@@ -17996,6 +18114,17 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
+/area/f13/building)
+"ifP" = (
+/obj/structure/table/wood/fancy/monochrome,
+/obj/item/reagent_containers/glass/rag/towel,
+/obj/item/reagent_containers/glass/rag/towel{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/glass/rag/towel{
+	pixel_y = 10
+	},
+/turf/open/floor/carpet/purple,
 /area/f13/building)
 "igc" = (
 /obj/machinery/light/small{
@@ -21724,6 +21853,11 @@
 /obj/item/flag/outlaw,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
+"jVe" = (
+/obj/machinery/chem_dispenser/drinks/fullupgrade,
+/obj/structure/table/wood/bar,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "jVi" = (
 /obj/machinery/vending/hydronutrients,
 /turf/open/floor/plasteel/f13{
@@ -21796,6 +21930,12 @@
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
 	},
+/area/f13/building)
+"jYm" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "jYs" = (
 /obj/machinery/light/small{
@@ -27674,6 +27814,11 @@
 /obj/effect/spawner/lootdrop/f13/rare,
 /turf/open/floor/plating/f13/inside,
 /area/f13/brotherhood/dorms)
+"mDD" = (
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade,
+/obj/structure/table/wood/bar,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "mDH" = (
 /obj/machinery/light/floor{
 	critical_machine = 1;
@@ -27700,6 +27845,16 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
+"mEw" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/structure/mirror{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess,
+/area/f13/building)
 "mEz" = (
 /obj/structure/sign/directions/cells{
 	dir = 1
@@ -28403,6 +28558,11 @@
 /obj/effect/spawner/lootdrop/f13/uncommon,
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
+"mVy" = (
+/obj/item/storage/box/cups,
+/obj/structure/table/wood/bar,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "mVz" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/grass/jungle,
@@ -28740,6 +28900,41 @@
 	},
 /turf/open/floor/plasteel/caution,
 /area/f13/vault)
+"ncH" = (
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 0;
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#BBBBBB"
+	},
+/area/f13/building)
 "ncL" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -30554,6 +30749,10 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
+/area/f13/building)
+"nSQ" = (
+/obj/machinery/computer/cloning,
+/turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "nTf" = (
 /obj/structure/cable{
@@ -37689,6 +37888,7 @@
 /area/f13/bunker)
 "qUW" = (
 /obj/machinery/light,
+/obj/structure/bed/roller,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "qVo" = (
@@ -39220,6 +39420,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/armory)
+"rEG" = (
+/obj/structure/mirror{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "rEQ" = (
 /obj/structure/chair/sofa/left{
 	dir = 4
@@ -42974,6 +43180,15 @@
 	icon_state = "2-i"
 	},
 /area/f13/vault)
+"tqJ" = (
+/obj/machinery/door/airlock,
+/obj/structure/curtain{
+	color = "red"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor{
+	icon_state = "floordirty"
+	},
+/area/f13/building)
 "tqQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -45344,6 +45559,10 @@
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
+"uvV" = (
+/obj/machinery/dna_scannernew,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "uvZ" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/barber{
@@ -46398,6 +46617,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"uTH" = (
+/obj/machinery/nuclearbomb/beer,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "uTI" = (
 /turf/open/floor/plasteel/darkpurple/side{
 	dir = 4
@@ -46598,6 +46821,27 @@
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/floor/grass,
 /area/f13/underground/cave/vault/fourfivefour)
+"uZT" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#BBBBBB"
+	},
+/area/f13/building)
 "vac" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plasteel/whitegreen/side{
@@ -48859,6 +49103,11 @@
 /mob/living/simple_animal/hostile/renegade/soldier,
 /turf/open/floor/wood_common,
 /area/f13/brotherhood/offices1st)
+"wbT" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "wbU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/red/line,
@@ -52693,6 +52942,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
+"xRH" = (
+/obj/item/pizzabox/pineapple,
+/obj/structure/table/wood/bar,
+/obj/item/pizzabox/vegetable{
+	pixel_y = 10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "xRI" = (
 /obj/structure/weightlifter,
 /turf/open/floor/plasteel/dark,
@@ -52885,6 +53142,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood/dorms)
+"xWJ" = (
+/obj/structure/table/wood/bar,
+/obj/item/pizzabox/meat,
+/obj/item/pizzabox/margherita{
+	pixel_y = 10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
 "xWL" = (
 /mob/living/simple_animal/hostile/deathclaw/power_armor{
 	faction = list("deathclaw","enclave");
@@ -76750,17 +77015,17 @@ whv
 whv
 whv
 whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
+aEL
+aEL
+aEL
+aEL
+aEL
+aEL
+aEL
+aEL
+aEL
+aEL
+aEL
 whv
 whv
 whv
@@ -77007,17 +77272,17 @@ whv
 whv
 whv
 whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
+aEL
+ijC
+ijC
+ijC
+ijC
+ijC
+ijC
+ijC
+ijC
+ijC
+aEL
 whv
 whv
 whv
@@ -77264,17 +77529,17 @@ whv
 whv
 whv
 whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
+aEL
+ijC
+gsz
+jYm
+vRf
+ijC
+cqY
+jYm
+vRf
+ijC
+aEL
 whv
 whv
 whv
@@ -77521,17 +77786,17 @@ whv
 whv
 whv
 whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
-whv
+aEL
+ijC
+nSQ
+vRf
+vRf
+cNx
+vRf
+vRf
+rEG
+ijC
+aEL
 whv
 whv
 whv
@@ -77778,16 +78043,16 @@ whv
 whv
 whv
 whv
-whv
 aEL
-aEL
-aEL
-aEL
-aEL
-aEL
-aEL
-aEL
-aEL
+ijC
+uvV
+lFP
+vRf
+ijC
+cqY
+vRf
+vRf
+ijC
 aEL
 aEL
 aEL
@@ -77809,7 +78074,7 @@ svH
 svH
 svH
 aEL
-whv
+aEL
 bpQ
 pPM
 iys
@@ -78035,7 +78300,6 @@ whv
 whv
 whv
 whv
-whv
 aEL
 ijC
 ijC
@@ -78043,6 +78307,7 @@ ijC
 ijC
 ijC
 ijC
+cNx
 ijC
 ijC
 ijC
@@ -78292,7 +78557,7 @@ whv
 whv
 whv
 whv
-whv
+aEL
 aEL
 ijC
 kae
@@ -78301,8 +78566,8 @@ vRf
 umx
 vRf
 bNu
-tCL
-tCL
+wpu
+cYq
 ijC
 roY
 plC
@@ -78816,17 +79081,17 @@ dYv
 vRf
 vRf
 vRf
-wpu
+tCL
 ijC
 gNn
 gNn
-sAU
+mEw
 ijC
 vRf
 ijC
 gNn
 gNn
-sAU
+mEw
 ijC
 aEL
 whv
@@ -79609,7 +79874,7 @@ aEL
 svH
 svH
 aEL
-bpQ
+aEL
 bpQ
 bpQ
 bpQ
@@ -80119,7 +80384,7 @@ iQC
 ijC
 ijC
 aEL
-whv
+aEL
 aEL
 svH
 svH
@@ -80377,7 +80642,7 @@ iQC
 ijC
 ijC
 aEL
-whv
+aEL
 aEL
 bLB
 aEL
@@ -80867,7 +81132,7 @@ bPB
 wqO
 ubw
 ubw
-iuA
+tqJ
 ryW
 boV
 oPe
@@ -83951,7 +84216,7 @@ sAB
 dtH
 ubw
 ubw
-iuA
+tqJ
 ryW
 boV
 oPe
@@ -85257,7 +85522,7 @@ wnb
 ijC
 qQL
 gyE
-qQL
+uTH
 ijC
 aEL
 whv
@@ -85516,7 +85781,7 @@ qQL
 qQL
 qQL
 ijC
-aEL
+ijC
 aEL
 whv
 ngA
@@ -85765,14 +86030,14 @@ ijC
 ijC
 ijC
 ijC
-xCK
+gxQ
 ijC
 ijC
 ijC
 qQL
 qQL
 qQL
-ijC
+qQL
 ijC
 aEL
 whv
@@ -86019,16 +86284,16 @@ bAq
 bAq
 kvD
 ijC
-lCy
-iuc
-joL
+bDW
+ncH
+ggv
 mju
 ijC
 aEL
 ijC
+mVy
 qQL
-qQL
-qQL
+uwn
 uwn
 ijC
 aEL
@@ -86276,17 +86541,17 @@ bAq
 bAq
 aUO
 ijC
-gwU
-mju
-mju
+bDW
+ggv
+ggv
 mju
 ijC
 aEL
 ijC
-wBn
+jVe
 qQL
-qQL
-pXs
+wbT
+bfm
 ijC
 aEL
 whv
@@ -86533,16 +86798,16 @@ bAq
 bAq
 uCt
 ijC
-loT
-mju
-mju
+bDW
+ggv
+ggv
 mju
 ijC
 aEL
 ijC
-wBn
+mDD
 qQL
-qQL
+vMZ
 vMZ
 ijC
 aEL
@@ -86790,16 +87055,16 @@ bAq
 bAq
 eLu
 ijC
-qxd
-hZO
-bwW
-ijC
+cRb
+uZT
+hKS
+ifP
 ijC
 aEL
 ijC
 ijC
-wBn
-wBn
+xWJ
+xRH
 ijC
 ijC
 aEL
@@ -87051,7 +87316,7 @@ ijC
 ijC
 ijC
 ijC
-aEL
+ijC
 aEL
 aEL
 ijC
@@ -87309,7 +87574,7 @@ aEL
 aEL
 aEL
 aEL
-pLB
+aEL
 aEL
 aEL
 aEL

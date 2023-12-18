@@ -814,6 +814,11 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Den Waster"
 	icon_state = "Wastelander"
 
+
+/obj/effect/landmark/start/f13/wastelander/gar
+	name = "Garland City Waster"
+	icon_state = "Wastelander"
+
 /obj/effect/landmark/start/f13/ashdown
 	name = "Ashdown Citizen"
 	icon_state = "Wastelander"
@@ -894,6 +899,10 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/villager
 	name = "Villager"
+	icon_state = "Tribal"
+
+/obj/effect/landmark/start/f13/dualcitizen
+	name = "Dual Citizen"
 	icon_state = "Tribal"
 
 /obj/effect/landmark/start/f13/hunter

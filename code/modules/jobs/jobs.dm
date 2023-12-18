@@ -245,6 +245,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Far-Lands Tribals",
 	"Wastelander",
 	"Den Waster",
+	"Garland City Waster",
 	"Radio Operator",
 ))
 
@@ -293,6 +294,7 @@ GLOBAL_LIST_INIT(tribal_positions, list(
 	"Hunter",
 	"Spirit-Pledged",
 	"Guardian",
+	"Dual Citizen"
 ))
 //bikrs
 GLOBAL_LIST_INIT(biker_positions, list(

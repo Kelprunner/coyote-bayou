@@ -653,6 +653,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/caves)
+"arf" = (
+/obj/structure/bed/nest,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "arj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/uncommon,
@@ -3438,11 +3442,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A reprogrammed Rob-Co turret. It still works. Its targetting also seems to have been overriden to target anything not between eight and ten feet and green.";
 	faction = list("hostile","supermutant");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Reprogrammed Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -3504,11 +3508,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A reprogrammed Rob-Co turret. It still works. Its targetting also seems to have been overriden to target anything not between eight and ten feet and green.";
 	faction = list("hostile","supermutant");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Reprogrammed Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -4423,13 +4427,10 @@
 /turf/closed/wall/f13/store,
 /area/f13/building/trainstation)
 "bOQ" = (
-/obj/structure/table/wood/settler,
-/obj/item/storage/secure/briefcase,
-/obj/item/storage/secure/briefcase,
-/obj/item/storage/secure/briefcase,
-/obj/effect/spawner/lootdrop/f13/uncommon,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "bOR" = (
 /obj/machinery/door/unpowered/securedoor{
 	max_integrity = 800;
@@ -7326,7 +7327,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/miasma,
 /area/f13/caves)
 "dau" = (
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/bars,
+/obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
 	},
@@ -7573,6 +7575,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood_common,
 /area/f13/building)
+"dkY" = (
+/obj/structure/alien/weeds/node,
+/obj/structure/bed/nest,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "dlb" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/f13{
@@ -9021,6 +9028,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/caves)
+"eir" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/obj/structure/alien/resin/wall,
+/turf/closed/mineral/random/low_chance/underground,
+/area/f13/caves)
 "ejs" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9696,11 +9709,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -10494,6 +10507,13 @@
 /obj/structure/nest/gelcube,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"ffR" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "ffU" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood/old{
@@ -12173,6 +12193,11 @@
 /mob/living/simple_animal/hostile/deathclaw/mother,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"glw" = (
+/obj/structure/alien/resin/membrane,
+/obj/structure/alien/weeds/node,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "glB" = (
 /turf/closed/wall/r_wall,
 /area/f13/building/sewers)
@@ -12322,11 +12347,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A reprogrammed Rob-Co turret. It still works. Its targetting also seems to have been overriden to target anything not between eight and ten feet and green.";
 	faction = list("hostile","supermutant");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Reprogrammed Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -12443,6 +12468,11 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"guI" = (
+/obj/structure/alien/resin/membrane,
+/obj/structure/alien/weeds,
+/turf/open/floor/plasteel/rockvault/alien,
+/area/f13/caves)
 "guJ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/coffee,
@@ -12728,6 +12758,10 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"gCR" = (
+/obj/structure/alien/resin/wall,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/caves)
 "gCV" = (
 /obj/structure/simple_door/repaired,
 /obj/effect/decal/cleanable/dirt,
@@ -13687,6 +13721,10 @@
 /turf/open/floor/f13/wood{
 	icon_state = "oakfloor1"
 	},
+/area/f13/caves)
+"hlF" = (
+/obj/structure/alien/resin/wall,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "hlL" = (
 /obj/structure/barricade/sandbags,
@@ -14890,6 +14928,12 @@
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
+/area/f13/caves)
+"ibB" = (
+/obj/structure/alien/weeds,
+/obj/structure/bed/nest,
+/obj/item/clothing/mask/facehugger/toy,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "icm" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -16431,6 +16475,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"iVu" = (
+/obj/structure/alien/resin/wall,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "iVA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -16577,6 +16625,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"jaX" = (
+/obj/item/caution,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/building/sewers)
 "jbv" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -17066,6 +17120,11 @@
 /obj/machinery/telecomms/server/presets/vault,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
+"jrB" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/resin/wall,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "jrO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -17094,11 +17153,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A reprogrammed Rob-Co turret. It still works. Its targetting also seems to have been overriden to target anything not between eight and ten feet and green.";
 	faction = list("hostile","supermutant");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Reprogrammed Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -17277,11 +17336,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -17452,6 +17511,11 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
+"jFV" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "jGa" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibmid1"
@@ -17676,6 +17740,10 @@
 "jNJ" = (
 /obj/structure/barricade/wooden/strong,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"jNK" = (
+/obj/structure/alien/resin/wall,
+/turf/closed/mineral/random/high_chance,
 /area/f13/caves)
 "jNS" = (
 /obj/effect/decal/cleanable/dirt{
@@ -19756,6 +19824,12 @@
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
+"lfP" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/obj/structure/alien/resin/wall,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "lfV" = (
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/indestructible/ground/inside/subway,
@@ -19840,11 +19914,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A Rob-Co turret, pristene and sleek. Its robotic eyes pass over authorized individuals...onto you.";
 	faction = list("Syndicate");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Containment Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -20983,6 +21057,10 @@
 /obj/effect/spawner/lootdrop/f13/common_medicine,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"lRe" = (
+/obj/structure/alien/resin/wall,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "lRm" = (
 /obj/structure/handrail/g_central{
 	dir = 1;
@@ -21427,6 +21505,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/tunnel)
+"mcE" = (
+/obj/structure/alien/resin/membrane,
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds/node,
+/turf/open/floor/plasteel/rockvault/alien,
+/area/f13/caves)
 "mcG" = (
 /obj/structure/displaycase,
 /obj/structure/spider/stickyweb,
@@ -22102,11 +22186,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A reprogrammed Rob-Co turret. It still works. Its targetting also seems to have been overriden to target anything not between eight and ten feet and green.";
 	faction = list("hostile","supermutant");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Reprogrammed Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -22184,6 +22268,11 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/building/sewers)
+"myR" = (
+/obj/structure/alien/weeds/node,
+/obj/structure/rack/shelf_metal,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "mzp" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
@@ -22338,11 +22427,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "A reprogrammed Rob-Co turret. It still works. Its targetting also seems to have been overriden to target anything not between eight and ten feet and green.";
 	faction = list("hostile","supermutant");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Reprogrammed Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -22600,6 +22689,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden/strong,
 /obj/structure/barricade/wooden/planks/pregame,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
+"mLq" = (
+/obj/structure/alien/weeds,
+/obj/structure/bed/nest,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "mLS" = (
@@ -23773,6 +23867,11 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
+"nCd" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds/node,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "nCh" = (
 /obj/structure/nest/raider{
 	pixel_x = -1;
@@ -24403,6 +24502,12 @@
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
+"nWW" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds/node,
+/obj/structure/rack/shelf_metal,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "nXl" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
@@ -24705,6 +24810,11 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/building/sewers)
+"oht" = (
+/obj/structure/alien/weeds,
+/obj/structure/simple_door/metal/iron,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "ohA" = (
 /obj/machinery/shower{
 	pixel_y = 16
@@ -26241,11 +26351,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -27556,6 +27666,10 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"pQo" = (
+/obj/structure/alien/resin/wall,
+/turf/closed/mineral/random/low_chance/underground,
+/area/f13/caves)
 "pQG" = (
 /obj/item/firebow,
 /obj/effect/decal/cleanable/glitter/blue,
@@ -27938,6 +28052,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"qec" = (
+/obj/structure/alien/weeds,
+/obj/structure/rack/shelf_metal,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "qef" = (
 /obj/structure/flora/rock/jungle,
 /turf/open/indestructible/ground/outside/dirt/bigdirtturf,
@@ -28215,11 +28334,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -28425,11 +28544,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -30618,6 +30737,10 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"rJB" = (
+/obj/structure/alien/weeds,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "rJI" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -30904,6 +31027,12 @@
 "rRE" = (
 /mob/living/simple_animal/hostile/radscorpion/blue,
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rRL" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds/node,
+/obj/structure/bed/nest,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "rRS" = (
 /obj/item/storage/fancy/rollingpapers,
@@ -31468,6 +31597,11 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/building/sewers)
+"sjp" = (
+/obj/structure/alien/resin/wall,
+/obj/structure/alien/resin/wall,
+/turf/closed/mineral/random/low_chance/underground,
+/area/f13/caves)
 "sjF" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress3"
@@ -31796,6 +31930,10 @@
 /obj/effect/spawner/lootdrop/f13/uncommon,
 /turf/open/floor/wood_wide/wood_wide_dark,
 /area/f13/building/sewers)
+"suY" = (
+/obj/structure/alien/weeds/node,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "suZ" = (
 /obj/machinery/light{
 	dir = 1
@@ -33225,6 +33363,11 @@
 /obj/item/stack/sheet/leather/twenty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"tkH" = (
+/obj/structure/alien/resin/wall,
+/obj/structure/alien/resin/wall,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "tkP" = (
 /obj/structure/sink{
 	pixel_x = -12;
@@ -33678,6 +33821,12 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/f13/caves)
+"tyu" = (
+/obj/structure/alien/weeds/node,
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds/node,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "tyx" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /obj/structure/spacevine,
@@ -33690,6 +33839,10 @@
 	icon_state = "pool_tile"
 	},
 /area/f13/building/sewers)
+"tyC" = (
+/obj/structure/alien/weeds/node,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "tzj" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/uncommon,
@@ -34736,6 +34889,12 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"uiP" = (
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds,
+/obj/structure/alien/weeds/node,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "ujm" = (
 /obj/structure/table,
 /obj/machinery/cell_charger{
@@ -35595,11 +35754,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -36053,11 +36212,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -36426,6 +36585,11 @@
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
+/area/f13/caves)
+"vnz" = (
+/obj/structure/rack/shelf_metal,
+/obj/structure/alien/weeds,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "vnC" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -37724,11 +37888,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a308/improvised/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -39982,6 +40146,10 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/building/sewers)
+"xAw" = (
+/obj/structure/alien/resin/membrane,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "xAC" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4";
@@ -40331,6 +40499,11 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"xKD" = (
+/obj/structure/alien/resin/wall,
+/obj/structure/alien/resin/wall,
+/turf/closed/mineral/random/high_chance,
+/area/f13/caves)
 "xKU" = (
 /obj/structure/spider/stickyweb,
 /obj/structure/barricade/wooden/strong,
@@ -52735,7 +52908,7 @@ boU
 aae
 uUw
 bHB
-bOQ
+opR
 bLL
 omO
 bLL
@@ -56879,14 +57052,14 @@ dDD
 uuS
 gHm
 eFN
-aae
-aae
-aae
-aae
-xwF
-aae
-aae
-aae
+tkH
+iVu
+iVu
+iVu
+iVu
+iVu
+iVu
+iVu
 bPE
 bPE
 bPE
@@ -57136,22 +57309,22 @@ iUE
 pry
 tIx
 eFN
-aae
-aae
-aae
-aae
-xwF
-aae
-aae
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+myR
+rJB
+rJB
+rJB
+bOQ
+rJB
+iVu
+iVu
+lfP
+iVu
+iVu
+iVu
+dkY
+rJB
+mLq
 bOb
 vUb
 nmE
@@ -57393,22 +57566,22 @@ iUE
 vOn
 pry
 eFN
-aae
-aae
-aae
-aae
-xwF
-aae
-aae
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+tkH
+rJB
+ibB
+suY
+jrB
+nCd
+rJB
+rJB
+uiP
+pQo
+vnz
+iVu
+xAw
+rJB
+mLq
 bOb
 rGs
 adE
@@ -57649,23 +57822,23 @@ tkZ
 xRB
 hAD
 oWX
-kyV
 eFN
-aak
-aae
-aae
-xwF
-aae
-aae
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+eFN
+iVu
+iVu
+iVu
+iVu
+iVu
+iVu
+iVu
+hlF
+rJB
+pQo
+rJB
+suY
+rJB
+rJB
+suY
 bOb
 bOb
 cfj
@@ -57914,15 +58087,15 @@ eFN
 eFN
 eFN
 eFN
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+bOQ
+rJB
+pQo
+iVu
+rJB
+rJB
+xAw
+lRe
 bOb
 sUn
 adE
@@ -58171,15 +58344,15 @@ kyV
 kyV
 kyV
 eFN
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+rJB
+glw
+rJB
+rJB
+nCd
+bOQ
+rJB
+lRe
 bOb
 tvx
 nmE
@@ -58428,15 +58601,15 @@ pry
 pry
 kyV
 eFN
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+uiP
+rJB
+rJB
+rJB
+rJB
+lRe
+rJB
+lRe
 bOb
 bOb
 tEy
@@ -58685,15 +58858,15 @@ eFN
 wQf
 bPM
 eFN
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+iVu
+iVu
+rRL
+mLq
+lRe
+gCR
+tyu
+lRe
 bOb
 dFq
 gbu
@@ -58942,15 +59115,15 @@ eFN
 gQx
 gQx
 eFN
-xwF
-xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-aae
+iVu
+pQo
+pQo
+lRe
+lRe
+lRe
+bOQ
+rJB
+lRe
 bOb
 mvv
 jhP
@@ -59199,15 +59372,15 @@ eFN
 kyV
 kyV
 eFN
+iVu
 xwF
 xwF
-xwF
-xwF
-aae
-aae
-aae
-aae
-xwF
+pQo
+uiP
+ffR
+rJB
+rJB
+pQo
 bOb
 jpF
 nFE
@@ -59459,12 +59632,12 @@ jGk
 jGk
 frn
 jGk
-aae
-aae
-aae
-aae
-aae
-xwF
+lRe
+lRe
+rJB
+suY
+arf
+pQo
 bOb
 bOb
 bOb
@@ -59717,12 +59890,12 @@ jGk
 tkZ
 jGk
 rHB
-xwF
-xwF
-xwF
-xwF
-xwF
-xwF
+pQo
+pQo
+rJB
+pQo
+sjp
+iVu
 xwF
 aae
 aae
@@ -59975,12 +60148,12 @@ tkZ
 tkZ
 jGk
 xwF
-xwF
-aak
-aak
-aak
-aak
-xwF
+pQo
+rJB
+nCd
+nCd
+iVu
+iVu
 aae
 aae
 aae
@@ -60232,12 +60405,12 @@ tkZ
 nmK
 jGk
 xwF
-xwF
-xwF
-xwF
-xwF
-aak
-xwF
+pQo
+mcE
+guI
+rJB
+rJB
+iVu
 aae
 aae
 aae
@@ -60489,12 +60662,12 @@ tkZ
 tkZ
 jGk
 xwF
-xwF
-xwF
-xwF
-xwF
-aak
-xwF
+pQo
+nWW
+rJB
+rJB
+uiP
+iVu
 aae
 aae
 aae
@@ -60746,13 +60919,13 @@ lRm
 tit
 jGk
 xwF
-xwF
-xwF
-xwF
-xwF
-xwF
-xwF
-aae
+pQo
+qec
+rJB
+rJB
+pQo
+eir
+jFV
 aae
 aae
 aae
@@ -61002,14 +61175,14 @@ tkZ
 bQs
 gcv
 jGk
+pQo
+pQo
+rJB
+rJB
+mLq
+jNK
 xwF
-xwF
-xwF
-aak
-aak
-aak
-xwF
-aae
+tyC
 aak
 aak
 aak
@@ -61259,12 +61432,12 @@ tkZ
 bQs
 uQG
 jGk
-aae
-aae
-aae
-aae
-aae
-aak
+lRe
+rJB
+bOQ
+bOQ
+mLq
+jNK
 aae
 aae
 aak
@@ -61514,14 +61687,14 @@ gcv
 dHk
 dHk
 gcv
-gcv
-tPK
-aae
-aae
-aae
-aak
-aak
-aak
+jaX
+dau
+oht
+rJB
+rJB
+rJB
+jNK
+jNK
 aae
 aae
 aak
@@ -61772,12 +61945,12 @@ dHk
 dHk
 gcv
 gcv
-dau
-aae
-aae
-aae
-aae
-aae
+jGk
+lRe
+lRe
+rJB
+lRe
+lRe
 aae
 aae
 aae
@@ -62031,9 +62204,9 @@ sji
 uFI
 jGk
 aae
-aae
-aae
-aak
+lRe
+lRe
+xKD
 aak
 aae
 aae
@@ -62292,7 +62465,7 @@ aae
 aae
 aae
 aae
-aak
+aae
 aae
 aae
 aae

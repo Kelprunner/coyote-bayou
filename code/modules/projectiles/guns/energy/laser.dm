@@ -1018,6 +1018,7 @@
 	can_charge = 1
 	can_flashlight = 0
 	can_scope = TRUE
+	trigger_guard = TRIGGER_GUARD_NORMAL
 	max_upgrades = 6 // Super moddable, but remember you have to change guns when you run out because you can't reload these.
 	weapon_class = WEAPON_CLASS_NORMAL
 	weapon_weight = GUN_ONE_HAND_AKIMBO
@@ -1382,7 +1383,7 @@
 	selfcharge = 1
 	icon_state = "LaserAK"
 	item_state = null
-	selfchargerate = 4 SECONDS
+	selfchargerate = 6 SECONDS
 	icon = 'modular_citadel/icons/obj/guns/VGguns.dmi'
 	cell_type = "/obj/item/stock_parts/cell/ammo/breeder"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/tg/kalashheavy)

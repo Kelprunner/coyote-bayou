@@ -784,10 +784,15 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	medical_record_text = "Patient has an addiction to the soft drink Cosmic-Cola. Somehow, their metabolism has adapted to the sugars and artifical flavorings."
 
 /datum/quirk/nukalover/add()
+	if(!ishuman(quirk_holder))
+		to_chat(quirk_holder, span_warning("You suddenly remember an article in Cat Fancy about how sodie pop can cause liver damage and cancer of the rectum. Might be best to lay off the stuff (especially since you kinda cant actually drink it, not being a human and all)."))
+		return
 	var/mob/living/carbon/human/H = quirk_holder
 	var/datum/species/species = H.dna.species
 	species.liked_food |= NUKA
 	species.disliked_food |= VEGETABLES
+	var/obj/item/organ/sodie_organ/gibb = new(H)
+	gibb.Insert(H)
 
 /datum/quirk/nukalover/remove()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -795,6 +800,9 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 		var/datum/species/species = H.dna.species
 		species.liked_food = initial(species.liked_food)
 		species.disliked_food = initial(species.disliked_food)
+		var/obj/item/organ/sodie_organ/gibb = H.getorganslot(ORGAN_SLOT_SODIE_ORGAN)
+		if(gibb)
+			qdel(gibb)
 
 /datum/quirk/trapper
 	name = "Trapper"
@@ -2305,7 +2313,9 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	mechanics = "Grants access to positive Big Leagues & Health - Tougher!"
 	conflicts = list(
 		/datum/quirk/bigleagues,
-		/datum/quirk/lifegiverplus
+		/datum/quirk/lifegiverplus,
+		/datum/quirk/flimsy,
+		/datum/quirk/veryflimsy
 		)
 	gain_text = span_notice("DAMN BRO YOU SWOLE!")
 	lose_text = span_notice("Maybe you could skip gym day...")
@@ -2485,7 +2495,8 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	mechanics = "Grants access to positive trait Primitive Tech & Chemwiz."
 	conflicts = list(
 		/datum/quirk/tribal_tech,
-		/datum/quirk/chemwhiz
+		/datum/quirk/chemwhiz,
+		/datum/quirk/dumb
 		)
 	gain_text = span_notice("The secrets of chemistry are all laid out before you...")
 	lose_text = span_notice("Sulphur?  I barely know her!")
@@ -2617,7 +2628,8 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	mechanics = "Grants access to positive trait Chem Whiz & Minor Surgery."
 	conflicts = list(
 		/datum/quirk/chemwhiz,
-		/datum/quirk/surgerylow
+		/datum/quirk/surgerylow,
+		/datum/quirk/dumb
 		)
 	gain_text = span_notice("Let's go practice medicine!")
 	lose_text = span_notice("I really think I need a true medical license...")
