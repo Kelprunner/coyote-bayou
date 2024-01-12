@@ -548,7 +548,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	if(!hair_hidden || dynamic_hair_suffix)
 		var/mutable_appearance/hair_overlay = mutable_appearance(layer = -HAIR_LAYER)
+		var/mutable_appearance/hair_2_overlay = mutable_appearance(layer = -HAIR_LAYER)
 		var/mutable_appearance/gradient_overlay = mutable_appearance(layer = -HAIR_LAYER) // Coyote ADD: Gradient hairs!
+		var/mutable_appearance/gradient_2_overlay = mutable_appearance(layer = -HAIR_LAYER) // Coyote ADD: Gradient hairs!		
 
 		if(!hair_hidden && !H.getorgan(/obj/item/organ/brain)) //Applies the debrained overlay if there is no brain
 			if(!(NOBLOOD in species_traits))
@@ -606,7 +608,31 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 					gradient_overlay.icon = grad_s
 				// Coyote ADD: End
 
+				//Hair 2
+				var/icon/hair_2_temp = null
+				var/datum/sprite_accessory/hair_2_style_ref = GLOB.hair_styles_list[H.dna.features["hair_style_2"]]
+				if(hair_2_style_ref)
+					hair_2_temp = new/icon("icon" = hair_2_style_ref.icon, "icon_state" = hair_2_style_ref.icon_state)
+					hair_2_temp.Blend("#[H.dna.features["hair_color_2"]]", ICON_MULTIPLY)
+					var/icon/hair_sprite = new/icon("icon" = hair_file, "icon_state" = hair_state)
+					hair_2_temp.Blend(hair_sprite, ICON_OVERLAY)
+
+					var/icon/grad_s_2 = null
+					var/grad_style_ref_2 = GLOB.hair_gradients[H.dna.features["grad_style_2"]]
+					if(grad_style_ref_2)
+						grad_s_2 = new/icon("icon" = 'modular_coyote/icons/mob/hair_gradients.dmi', "icon_state" = grad_style_ref_2)
+						grad_s_2.Blend(hair_2_temp, ICON_AND)
+						grad_s_2.Blend("#[H.dna.features["grad_color_2"]]", ICON_MULTIPLY)
+
+						if(!isnull(grad_s_2))
+							gradient_2_overlay.icon = grad_s_2
+
+				if(!isnull(hair_2_temp))
+					hair_2_overlay.icon = hair_2_temp
+
 		if(hair_overlay.icon)
+			standing += hair_2_overlay
+			standing += gradient_2_overlay
 			standing += hair_overlay
 			standing += gradient_overlay // Coyote Add: Actual MA which renders onto the sprite!
 
@@ -1696,7 +1722,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				if(user == target)
 					to_chat(user, span_alert("Your ass is still jiggling about way too much to get a good smack!"))
 				else
-					to_chat(user, span_alert("[user]'s big blubbery ass is still jiggling about way too much to get a good smack!"))
+					to_chat(user, span_alert("[target]'s big blubbery ass is still jiggling about way too much to get a good smack!"))
 			else
 				COOLDOWN_START(src, ass, 5 SECONDS)
 				target.Dizzy(5)
@@ -1709,7 +1735,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 					)
 					return
 				else
-					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "ass", /datum/mood_event/hot)
+					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "ass", /datum/mood_event/butt_slap)
 					playsound(target.loc, 'sound/weapons/slap.ogg', 50, FALSE, -1) // deep bassy ass
 					// var/vol = 40
 					// var/dist = 15

@@ -186,6 +186,13 @@
 		/obj/effect/spawner/lootdrop/f13/rare_cowboy = 10,
 	)
 
+/obj/effect/spawner/lootdrop/f13/very_rare
+	name = "very rare weapons"
+	loot = list(
+		/obj/effect/spawner/lootdrop/f13/very_rare_guns = 50, //can adjust these values as needed
+		/obj/effect/spawner/lootdrop/f13/very_rare_energy = 50,
+	)
+
 ///////////////////////////////
 ///ballistic weapon spawners///
 ///////////////////////////////
@@ -1216,6 +1223,8 @@
 		/obj/item/tool_upgrade/refinement/laserguide = 1,
 		/obj/item/tool_upgrade/reinforcement/heatsink = 1,
 		/obj/item/gun_upgrade/trigger/raidertrigger = 1,
+		/obj/item/tool_upgrade/augment/randomizer = 1,
+		/obj/item/gun_upgrade/cosmetic/gold = 1,
 		/obj/item/gun_upgrade/trigger/boom = 1,
 
 	)
