@@ -275,6 +275,14 @@
 /obj/item/storage/box/large/custom_kit/matter7/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/colt357/mateba(src)
 
+/datum/gear/donator/kits/applewhiskey
+	name = "Huntress Customs Minigun"
+	path = /obj/item/storage/box/large/custom_kit/applewhiskey
+	ckeywhitelist = list("Apple Whisky")
+
+/obj/item/storage/box/large/custom_kit/applewhiskey/PopulateContents()
+	new /obj/item/gun/ballistic/babygun(src)
+
 /datum/gear/donator/kits/brimcon
 	name = "Gift from Claws"
 	path = /obj/item/storage/box/large/custom_kit/brimcon
@@ -769,13 +777,13 @@
 	new /obj/item/gun/ballistic/rifle/mag/bifrost(src)
 
 /datum/gear/donator/kits/palpapus
-	name = "Darth Plapapus Customs"
+	name = "Darth Plapappus Customs"
 	path = /obj/item/storage/box/large/custom_kit/palpapus
 	ckeywhitelist = list("lordpapalus", "Lord_Papalus")
 
 /obj/item/storage/box/large/custom_kit/palpapus/PopulateContents()
 	new /obj/item/clothing/head/helmet/f13/brahmincowboyhat(src)
-	new /obj/item/clothing/suit/armor/harpercoat(src)
+	new /obj/item/clothing/suit/armor/medium/raider/combatduster(src)
 	new /obj/item/clothing/under/f13/eighties(src)
 	new /obj/item/clothing/shoes/f13/rag/pawb(src)
 	new /obj/item/gun/ballistic/rifle/repeater/cowboy/tribal(src)
@@ -1615,6 +1623,14 @@
 	new /obj/item/clothing/under/tribaliris(src)
 	new /obj/item/gun/ballistic/shotgun/s163/thingblessed(src)
 
+/datum/gear/donator/kits/thingpony/petal
+	name = "Petal's pack"
+	path = /obj/item/storage/box/large/custom_kit/thingpony/petal
+	ckeywhitelist = list("thingpony")
+
+/obj/item/storage/box/large/custom_kit/thingpony/petal/PopulateContents()
+	new /obj/item/clothing/under/poofygreen(src)
+
 /datum/gear/donator/kits/tk420634
 	name = "Casey's 'Business' Bundle"
 	path = /obj/item/storage/box/large/custom_kit/tk420634
@@ -2024,7 +2040,7 @@
 	new  /obj/item/clothing/suit/armor/medium/duster/town/embroidered/smelly(src)
 	new  /obj/item/gun/ballistic/automatic/pistol/ninemil/makarov/smelly(src)
 	new  /obj/item/gun/ballistic/automatic/ww1selfloader/smelly(src)
-	
+
 /datum/gear/donator/kits/trickingtrapster
 	name = "Tarot Box"
 	path = /obj/item/storage/box/large/custom_kit/trickingtrapster

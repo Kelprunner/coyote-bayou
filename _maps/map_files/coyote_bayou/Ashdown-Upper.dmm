@@ -180,6 +180,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"bE" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/sink/deep_water,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/wasteland/ashdown)
 "bF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/bench,
@@ -569,6 +576,16 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"ex" = (
+/obj/machinery/conveyor_switch{
+	pixel_y = -9;
+	id = "ashdown"
+	},
+/turf/open/indestructible/cobble{
+	light_color = null;
+	color = "#777777"
+	},
+/area/f13/caves)
 "eB" = (
 /obj/structure/flora/grass/coyote/twentyeight,
 /turf/open/indestructible/ground/outside/dirt,
@@ -928,7 +945,8 @@
 /area/f13/caves)
 "hp" = (
 /obj/machinery/conveyor/auto{
-	dir = 4
+	dir = 4;
+	id = "ashdown"
 	},
 /turf/open/indestructible/cobble{
 	light_color = null;
@@ -1565,6 +1583,11 @@
 /obj/item/reagent_containers/food/snacks/meat/cutlet/gondola,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"lY" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/sink/deep_water,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "mj" = (
 /obj/structure/flora/burnedbush1,
 /turf/open/indestructible/ground/outside/desert,
@@ -1868,6 +1891,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
+/obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "ow" = (
@@ -2564,7 +2588,7 @@
 /obj/structure/curtain{
 	color = "#845f58"
 	},
-/turf/open/indestructible/ground/outside/woodalt,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "tL" = (
 /obj/structure/table/wood,
@@ -3417,7 +3441,7 @@
 /obj/structure/curtain{
 	color = "#845f58"
 	},
-/turf/open/indestructible/ground/outside/woodalt,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "zk" = (
 /obj/structure/railing{
@@ -3624,6 +3648,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
+/obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/ashdown)
 "AI" = (
@@ -4084,6 +4109,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/ashdown)
 "Eh" = (
@@ -5006,7 +5032,7 @@
 /obj/structure/curtain{
 	color = "#845f58"
 	},
-/turf/open/indestructible/ground/outside/woodalt,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "JV" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -5156,6 +5182,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"Lj" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/sink/deep_water,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/wasteland/ashdown)
 "Ll" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/curtain{
@@ -5594,7 +5627,7 @@
 /obj/structure/curtain{
 	color = "#845f58"
 	},
-/turf/open/indestructible/ground/outside/wood,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "OE" = (
 /obj/structure/flora/chomp/bush2{
@@ -5915,6 +5948,14 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building/abandoned)
+"Rt" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sink/deep_water,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/wasteland/ashdown)
 "Ru" = (
 /obj/structure/flora/brushwood,
 /turf/open/indestructible/ground/outside/desert,
@@ -6075,6 +6116,7 @@
 /obj/structure/flora/junglebush/b,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/ashdown)
 "Sm" = (
@@ -6107,6 +6149,7 @@
 	alpha = 20
 	},
 /obj/structure/flora/junglebush/b,
+/obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/ashdown)
 "Sz" = (
@@ -6483,7 +6526,8 @@
 "UG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor/auto{
-	dir = 4
+	dir = 4;
+	id = "ashdown"
 	},
 /turf/open/indestructible/cobble{
 	light_color = null;
@@ -7226,6 +7270,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
+/obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/ashdown)
 "ZX" = (
@@ -66791,7 +66836,7 @@ Fu
 hL
 py
 dV
-Cq
+Lj
 YI
 MN
 nK
@@ -67309,7 +67354,7 @@ tY
 Fp
 Er
 Zm
-Dz
+lY
 On
 jT
 jT
@@ -67818,7 +67863,7 @@ mY
 Fu
 hL
 py
-jA
+Rt
 Na
 Zm
 PO
@@ -68080,7 +68125,7 @@ Fl
 Ou
 Er
 Lp
-Dz
+lY
 On
 eo
 jT
@@ -69610,7 +69655,7 @@ Ym
 tO
 Yf
 uk
-tY
+bE
 kq
 Ee
 Fl
@@ -71915,7 +71960,7 @@ Bw
 Bw
 Bw
 Bw
-On
+ex
 UG
 eo
 MG

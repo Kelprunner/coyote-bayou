@@ -1337,6 +1337,13 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	new /obj/item/gun/ballistic/automatic/famas(src)
 	new /obj/item/ammo_box/a556(src)
 
+/obj/item/storage/box/gun/rifle/shotneedle
+	name = "Pz87 shotgun case"
+
+/obj/item/storage/box/gun/rifle/shotneedle/PopulateContents()
+	new /obj/item/gun/ballistic/shotgun/needles(src)
+	new /obj/item/ammo_box/needlercapsule/shotgun(src)
+
 /obj/item/storage/box/gun/rifle/svdgobrr
 	name = "Z34 Rifle case"
 
@@ -1365,6 +1372,13 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 
 /obj/item/storage/box/gun/rifle/needler/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/needlerrifle(src)
+	new /obj/item/ammo_box/needlercapsule(src)
+
+/obj/item/storage/box/gun/rifle/smgneedle
+	name = "NR-43 Turán rifle case"
+
+/obj/item/storage/box/gun/rifle/needlesmg/PopulateContents()
+	new /obj/item/gun/ballistic/automatic/needlersmg(src)
 	new /obj/item/ammo_box/needlercapsule(src)
 
 
@@ -1985,6 +1999,19 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	entry_flags = LOADOUT_FLAG_WASTER
 	entry_class = LOADOUT_CAT_LONGGUN
 	spawn_thing = /obj/item/storage/box/gun/rifle/sportcarbine
+
+
+/datum/loadout_box/needlershotgun
+	entry_tag = "Pz87 shotgun"
+	entry_flags = LOADOUT_FLAG_WASTER
+	entry_class = LOADOUT_CAT_LONGGUN
+	spawn_thing = /obj/item/storage/box/gun/rifle/shotneedle
+
+/datum/loadout_box/needlersmg
+	entry_tag = "Worn Akula Needler SMG"
+	entry_flags = LOADOUT_FLAG_WASTER
+	entry_class = LOADOUT_CAT_LONGGUN
+	spawn_thing = /obj/item/storage/box/gun/rifle/needlesmg
 
 /datum/loadout_box/varmint
 	entry_tag = "Varmint Rifle"
