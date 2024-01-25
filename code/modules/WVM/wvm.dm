@@ -836,22 +836,23 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 */
 
 /obj/machinery/mineral/wasteland_vendor/pipboy
-	name = "Wasteland Pip-N-Walk"
-	icon_state = "generic_idle"
+	name = "Vending Machine - ID and Datapals"
+	icon_state = "pipboy"
 	prize_list = list(
-		new /datum/data/wasteland_equipment("Pip-boy 3000",			/obj/item/pda,																25),
+		new /datum/data/wasteland_equipment("Datapal",			/obj/item/pda,																	25),
 		new /datum/data/wasteland_equipment("Reprogrammable ID",	/obj/item/card/id/selfassign,												20),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Reagent Scanner",	/obj/item/cartridge/chemistry,						10),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Health Scanner",	/obj/item/cartridge/medical,						10),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Signaler",	/obj/item/cartridge/signal,								10),
-		new /datum/data/wasteland_equipment("V270-Band Signal Divination Device",	/obj/item/pinpointer/validball_finder,								10),
+		new /datum/data/wasteland_equipment("V270-Band Signal Divination Device",	/obj/item/pinpointer/validball_finder,						10),
 		)
 	highpop_list = list(
-		new /datum/data/wasteland_equipment("Pip-boy 3000",			/obj/item/pda,																25),
+		new /datum/data/wasteland_equipment("Datapal",			/obj/item/pda,																	25),
 		new /datum/data/wasteland_equipment("Reprogrammable ID",	/obj/item/card/id/selfassign,												20),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Reagent Scanner",	/obj/item/cartridge/chemistry,						10),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Health Scanner",	/obj/item/cartridge/medical,						10),
 		new /datum/data/wasteland_equipment("E.N.H.A.N.C.E. Your Pip-boy: Signaler",	/obj/item/cartridge/signal,								10),
+		new /datum/data/wasteland_equipment("V270-Band Signal Divination Device",	/obj/item/pinpointer/validball_finder,						10),
 		)
 
 /obj/machinery/mineral/wasteland_vendor/special
@@ -981,7 +982,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/attachments
 	name = "Wasteland Vending Machine - Armor and Attachments"
-	icon_state = "generic_idle"
+	icon_state = "attachments_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Radiation Suit",				/obj/item/clothing/suit/radiation,								25),
 		new /datum/data/wasteland_equipment("Radiation Suit Hood",			/obj/item/clothing/head/radiation,								25),
@@ -1017,7 +1018,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/crafting
 	name = "Wasteland Vending Machine - Crafting"
-	icon_state = "generic_idle"
+	icon_state = "craft_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Metal Parts (x5)",					/obj/item/stack/crafting/metalparts/five,							10),
 		new /datum/data/wasteland_equipment("High Quality Metal Parts (x5)",	/obj/item/stack/crafting/goodparts/five,							25),
