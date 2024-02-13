@@ -884,9 +884,9 @@
 	loot = list(
 		/obj/item/storage/pill_bottle/chem_tin/radx = 1,
 		/obj/item/reagent_containers/pill/patch/jet = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
-		/obj/item/reagent_containers/hypospray/medipen/steady = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
+		/obj/item/reagent_containers/pill/patch/medx = 1,
+		/obj/item/reagent_containers/pill/patch/steady = 1,
+		/obj/item/reagent_containers/pill/patch/psycho = 1,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 	)
 
@@ -895,9 +895,9 @@
 	loot = list(
 		/obj/item/storage/pill_bottle/chem_tin/radx = 10,
 		/obj/item/reagent_containers/pill/patch/jet = 10,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 4,
-		/obj/item/reagent_containers/hypospray/medipen/steady = 4,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 4,
+		/obj/item/reagent_containers/pill/patch/medx = 4,
+		/obj/item/reagent_containers/pill/patch/steady = 4,
+		/obj/item/reagent_containers/pill/patch/psycho = 4,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 4,
 		/obj/item/reagent_containers/pill/patch/turbo = 4,
 		/obj/item/storage/pill_bottle/chem_tin/buffout = 4,
@@ -913,9 +913,9 @@
 	loot = list(
 		/obj/item/storage/pill_bottle/chem_tin/radx = 10,
 		/obj/item/reagent_containers/pill/patch/jet = 10,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 4,
-		/obj/item/reagent_containers/hypospray/medipen/steady = 4,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 4,
+		/obj/item/reagent_containers/pill/patch/medx = 4,
+		/obj/item/reagent_containers/pill/patch/steady = 4,
+		/obj/item/reagent_containers/pill/patch/psycho = 4,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 4,
 		/obj/item/reagent_containers/pill/patch/turbo = 4,
 		/obj/item/storage/pill_bottle/chem_tin/buffout = 4,
@@ -1223,11 +1223,12 @@
 /obj/effect/spawner/lootdrop/f13/trash_mods
 	name = "trash attachments"
 	loot = list(
-		/obj/item/tool_upgrade/productivity/red_paint = 1,
+		/obj/item/tool_upgrade/paint/red = 1,
+		/obj/item/tool_upgrade/paint/blue = 1,
+		/obj/item/tool_upgrade/paint/yellow = 1,
 		/obj/item/tool_upgrade/refinement/laserguide = 1,
 		/obj/item/tool_upgrade/reinforcement/heatsink = 1,
 		/obj/item/gun_upgrade/trigger/raidertrigger = 1,
-		/obj/item/tool_upgrade/augment/randomizer = 1,
 		/obj/item/gun_upgrade/cosmetic/gold = 1,
 		/obj/item/gun_upgrade/trigger/boom = 1,
 

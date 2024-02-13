@@ -442,6 +442,9 @@
 #define COMSIG_UPGRADE_ADDVAL "add_values" 						//from /atom/refresh_upgrades(): (/src) Called to add specific things to the /src, called before COMSIG_APPVAL
 #define COMSIG_GET_UPGRADES "get_upgrades"						//from /atom/refresh_upgrades(): (/src) Called to get the upgrades of the /src
 
+#define SIG_ITEM_WIELD "item_wield"								//from /obj/item/wield(): (src, mob/usr)
+#define SIG_ITEM_UNWIELD "item_unwield"							//from /obj/item/unwield(): (src, mob/usr)
+
 #define COMSIG_UPGRADE_REMOVE "uninstall"
 #define COMSIG_ITEM_MICROWAVE_ACT "microwave_act"                //called on item when microwaved (): (obj/machinery/microwave/M)
 #define COMSIG_ITEM_WORN_OVERLAYS "item_worn_overlays"			//from base of obj/item/worn_overlays(): (isinhands, icon_file, used_state, style_flags, list/overlays)
@@ -480,6 +483,8 @@
 // /obj/item/grenade signals
 #define COMSIG_GRENADE_PRIME "grenade_prime"					//called in /obj/item/gun/process_fire (user, target, params, zone_override)
 #define COMSIG_GRENADE_ARMED "grenade_armed"					//called in /obj/item/gun/process_fire (user, target, params, zone_override)
+
+#define COMSIG_ENERGY_GUN_SELFCHARGE_TICK "energy_gun_selfcharge_tick" // datum/source, obj/item/gun/energy/shootergun
 
 // /obj/item/clothing signals
 #define COMSIG_SHOES_STEP_ACTION "shoes_step_action"			//from base of obj/item/clothing/shoes/proc/step_action(): ()
