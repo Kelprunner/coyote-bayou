@@ -293,15 +293,27 @@
 	parent.visible_message(span_notice("[parent] digs up some stuff!"))
 	playsound(get_turf(parent), 'sound/effects/shovel_dig.ogg', 50, 1)
 
+/*
 /datum/crafting_recipe/trashloot/common
 	name = "Dig up common loot"
+	reqs = list(/obj/item/pickaxe = 1)  // so you at least have to put SOMETHING in
 	result = /obj/effect/spawner/lootdrop/f13/common
-	time = 14 SECONDS
+	time = 30 SECONDS
 
 /datum/crafting_recipe/trashloot/uncommon
 	name = "Slowly dig uncommon loot"
 	result = /obj/effect/spawner/lootdrop/f13/uncommon
-	time = 20 SECONDS
+	reqs = list(/obj/item/pickaxe/drill = 1) // so you at least have to put SOMETHING in
+	time = 60 SECONDS 
+*/
+
+// if you can give me a valid reason just to be able to spawn free shit besides unicorn horn arguments, do let me know 
+
+/datum/crafting_recipe/trashloot/rock
+	name = "Excavate a strange rock"
+	result = /obj/item/strangerock
+	reqs = list(/obj/item/pickaxe = 1) // so you at least have to put SOMETHING in
+	time = 60 SECONDS 
 
 /*
 /datum/crafting_recipe/msgterminal
@@ -336,4 +348,25 @@
 	time = 60
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
+
+/datum/crafting_recipe/sand
+	name = "Crush rocks"
+	result = /obj/item/stack/ore/glass/three
+	reqs = list(/obj/item/ammo_casing/caseless/rock = 3)
+	time = 15
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
+/datum/crafting_recipe/duckbot
+	name = "Amusing Duck"
+	result = /mob/living/simple_animal/hostile/amusing_duck
+	reqs = list(/obj/item/multitool = 1,
+				/obj/item/flashlight = 1,
+				/obj/item/light/bulb = 1,
+				/obj/item/storage/fancy/egg_box = 5,
+				/obj/item/grenade/f13/dynamite = 1)
+	time = 40
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
 

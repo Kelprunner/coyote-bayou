@@ -143,7 +143,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/eye_type = DEFAULT_EYES_TYPE	//Eye type
 	var/split_eye_colors = FALSE
 	var/tbs = TBS_DEFAULT // turner broadcasting system
-	var/kisser = KISS_DEFAULT // Kiss this (  Y  )
+	var/kisser = KISS_DEFAULT // Kiss this (     Y     )
+	/// which quester UID we're using
+	var/quester_uid
+	/// rough approximations of the character's finished quests
+	var/list/saved_finished_quests = list()
+	/// tight list of the character's active quests
+	var/list/saved_active_quests = list()
+	var/list/saved_unclaimed_points = 0
 	var/datum/species/pref_species = new /datum/species/mammal()	//Mutant race
 	/// If our species supports it, this will override our appearance. See species.dm. "Default" will just use the base icon
 	var/alt_appearance = "Default"
@@ -470,8 +477,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<a style='white-space:nowrap;' href='?_src_=prefs;preference=changeslot;num=[i];' [i == default_slot ? "class='linkOn'" : ""]>[name]</a> "
 					dat += "</center>"
 
-			dat += "<center><h2>Occupation Choices</h2>"
-			dat += "<a href='?_src_=prefs;preference=job;task=menu'>Set Occupation Preferences</a><br></center>"
+			dat += "<center><h2>Quest Board UID</h2>"
+			dat += "[quester_uid]</center>"
 			if(CONFIG_GET(flag/roundstart_traits))
 				dat += "<center>"
 				if(SSquirks.initialized && !(PMC_QUIRK_OVERHAUL_2K23 in current_version))
@@ -1340,6 +1347,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Ghost PDA:</b> <a href='?_src_=prefs;preference=ghost_pda'>[(chat_toggles & CHAT_GHOSTPDA) ? "All Messages" : "Nearest Creatures"]</a><br>"
 			//dat += "<b>Window Flashing:</b> <a href='?_src_=prefs;preference=winflash'>[(windowflashing) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<br>"
+			dat += "<b>Play Hunting Horn Sounds:</b> <a href='?_src_=prefs;preference=hear_hunting_horns'>[(toggles & SOUND_HUNTINGHORN) ? "Enabled":"Disabled"]</a><br>"
+			dat += "<b>Sprint Depletion Sound:</b> <a href='?_src_=prefs;preference=hear_sprint_buffer'>[(toggles & SOUND_SPRINTBUFFER) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Play Admin MIDIs:</b> <a href='?_src_=prefs;preference=hear_midis'>[(toggles & SOUND_MIDI) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Play Lobby Music:</b> <a href='?_src_=prefs;preference=lobby_music'>[(toggles & SOUND_LOBBY) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>See Pull Requests:</b> <a href='?_src_=prefs;preference=pull_requests'>[(chat_toggles & CHAT_PULLR) ? "Enabled":"Disabled"]</a><br>"
@@ -1410,6 +1419,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>FPS:</b> <a href='?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
 
 			dat += "<b>Income Updates:</b> <a href='?_src_=prefs;preference=income_pings'>[(chat_toggles & CHAT_BANKCARD) ? "Allowed" : "Muted"]</a><br>"
+			dat += "<b>Hear Radio Static:</b> <a href='?_src_=prefs;preference=static_radio'>[(chat_toggles & CHAT_HEAR_RADIOSTATIC) ? "Allowed" : "Muted"]</a><br>"
+			dat += "<b>Hear Radio Blurbles:</b> <a href='?_src_=prefs;preference=static_blurble'>[(chat_toggles & CHAT_HEAR_RADIOBLURBLES) ? "Allowed" : "Muted"]</a><br>"
 			dat += "<br>"
 
 			dat += "<b>Parallax (Fancy Space):</b> <a href='?_src_=prefs;preference=parallaxdown' oncontextmenu='window.location.href=\"?_src_=prefs;preference=parallaxup\";return false;'>"
@@ -3994,6 +4005,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("all")
 					be_random_body = !be_random_body
 
+				if("hear_hunting_horns")
+					toggles ^= SOUND_HUNTINGHORN
+					
+				if("hear_sprint_buffer")
+					toggles ^= SOUND_SPRINTBUFFER
+					
 				if("hear_midis")
 					toggles ^= SOUND_MIDI
 
@@ -4035,6 +4052,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("income_pings")
 					chat_toggles ^= CHAT_BANKCARD
+
+				if("static_blurble")
+					chat_toggles ^= CHAT_HEAR_RADIOBLURBLES
+
+				if("static_radio")
+					chat_toggles ^= CHAT_HEAR_RADIOSTATIC
 
 				if("pull_requests")
 					chat_toggles ^= CHAT_PULLR
@@ -4453,6 +4476,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		else
 			if(L[slot] < MAX_FREE_PER_CAT)
 				return TRUE */
+
+/datum/preferences/proc/generate_quester_id()
+	var/list/new_quid = list()
+	if(parent)
+		new_quid += ckey(parent.ckey)
+	else
+		new_quid += ckey(safepick(GLOB.ai_names) || "cranberry") //🤖 fixes integration tests
+	new_quid += ckey(safepick(GLOB.ing_verbs) || "cranberry")
+	new_quid += ckey(safepick(GLOB.adverbs) || "cranberry")
+	new_quid += ckey("[rand(1000,9999)]")
+	new_quid += ckey("[rand(1000,9999)]")
+	return new_quid.Join("-")
 
 /datum/preferences/proc/has_loadout_gear(save_slot, gear_type)
 	var/list/gear_list = loadout_data["SAVE_[save_slot]"]

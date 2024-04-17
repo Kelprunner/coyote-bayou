@@ -781,7 +781,7 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	new /obj/item/melee/onehanded/machete/scrapsabre(src)
 
 /obj/item/storage/box/gun/melee/celestia
-	name = "Plasma Cutter Celestia"
+	name = "Plasma Slicer Celestia"
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/storage/box/gun/melee/celestia/PopulateContents()
@@ -795,14 +795,14 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	new	/obj/item/melee/transforming/plasmacutter/regular/energykatana(src)
 
 /obj/item/storage/box/gun/melee/eve
-	name = "Plasma Cutter Eve"
+	name = "Plasma Slicer Eve"
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/storage/box/gun/melee/eve/PopulateContents()
 	new /obj/item/melee/transforming/plasmacutter/regular/eve(src)
 
 /obj/item/storage/box/gun/melee/plasma
-	name = "Plasma Cutter"
+	name = "Plasma Slicer"
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/storage/box/gun/melee/PopulateContents()
@@ -2475,13 +2475,13 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	spawn_thing = /obj/item/storage/box/gun/melee
 
 /datum/loadout_box/melee/celestia
-	entry_tag = "Plasma Cutter Celestia"
+	entry_tag = "Plasma Slicer Celestia"
 	entry_flags = LOADOUT_FLAG_WASTER
 	entry_class = LOADOUT_CAT_MELEE_ONE
 	spawn_thing = /obj/item/storage/box/gun/melee/celestia
 
 /datum/loadout_box/melee/eve
-	entry_tag = "Plasma Cutter Eve"
+	entry_tag = "Plasma Slicer Eve"
 	entry_flags = LOADOUT_FLAG_WASTER
 	entry_class = LOADOUT_CAT_MELEE_ONE
 	spawn_thing = /obj/item/storage/box/gun/melee/eve
@@ -2493,7 +2493,7 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	spawn_thing = /obj/item/storage/box/gun/melee/energykatana
 
 /datum/loadout_box/melee/plasma
-	entry_tag = "Plasma Cutter"
+	entry_tag = "Plasma slicer"
 	entry_flags = LOADOUT_FLAG_WASTER
 	entry_class = LOADOUT_CAT_MELEE_ONE
 	spawn_thing = /obj/item/storage/box/gun/melee/plasma
@@ -3065,8 +3065,8 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	name = "laser pistol and carbine case"
 
 /obj/item/storage/box/gun/energy/tglaser/PopulateContents()
-	new /obj/item/gun/energy/laser/tg/carbine(src)
-	new /obj/item/gun/energy/laser/tg/carbine/pistol(src)
+	new /obj/item/gun/energy/laser/cranklasergun/tg/carbine(src)
+	new /obj/item/gun/energy/laser/cranklasergun/tg/pistol(src)
 
 // Spamlaser
 /datum/loadout_box/energy/tglaser/spammer
@@ -3079,4 +3079,4 @@ GLOBAL_LIST_EMPTY(loadout_boxes)
 	name = "repeating blaster case"
 
 /obj/item/storage/box/gun/energy/tglaser/spammer/PopulateContents()
-	new /obj/item/gun/energy/laser/tg/spamlaser(src)
+	new /obj/item/gun/energy/laser/cranklasergun/tg/spamlaser(src)

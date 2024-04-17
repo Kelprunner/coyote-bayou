@@ -1,14 +1,25 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ab" = (
-/obj/structure/closet/cabinet,
-/obj/item/clothing/under/misc/bathrobe,
-/obj/item/clothing/under/misc/bathrobe,
-/obj/item/clothing/under/misc/bathrobe,
-/obj/item/clothing/under/misc/bathrobe,
-/obj/machinery/light/floor{
-	plane = -6
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/effect/decal/cleanable/glitter/white,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
 /area/f13/caves)
 "ac" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -55,6 +66,32 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
+"al" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/structure/chair/bench{
+	plane = -6
+	},
+/obj/effect/decal/cleanable/glitter/white,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "an" = (
 /obj/structure/railing,
 /turf/open/indestructible/ground/outside/roof,
@@ -128,14 +165,6 @@
 /obj/effect/spawner/lootdrop/f13/uncommon,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
-"aC" = (
-/obj/machinery/computer/camera_advanced{
-	dir = 4;
-	networks = list("nash")
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "aD" = (
 /obj/structure/chair/bench{
 	dir = 1
@@ -383,6 +412,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
+"bB" = (
+/obj/structure/flora/chomp/shrub0,
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "bD" = (
 /obj/structure/sink{
 	icon_state = "water";
@@ -825,25 +861,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ruins)
-"cR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "cS" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -1134,10 +1151,25 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "eb" = (
-/obj/machinery/light/floor{
-	plane = -6
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/effect/decal/cleanable/glitter/pink,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
 /area/f13/caves)
 "ed" = (
 /turf/closed/mineral/random/low_chance,
@@ -1180,7 +1212,8 @@
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
-	name = "steam"
+	name = "steam";
+	pixel_y = 16
 	},
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
@@ -1195,9 +1228,13 @@
 	pixel_y = 12;
 	pixel_x = 17
 	},
+/obj/effect/decal/cleanable/glitter/pink,
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "ep" = (
@@ -1415,7 +1452,6 @@
 "fh" = (
 /obj/effect/fake_stairs/east,
 /obj/structure/railing{
-	dir = 2;
 	color = "Grey"
 	},
 /obj/machinery/light{
@@ -1573,19 +1609,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"fH" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 25
-	},
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/paper/fluff/ruins/listeningstation/reports/november,
-/obj/item/pen,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "fK" = (
 /obj/structure/table/wood{
 	density = 0
@@ -1644,6 +1667,31 @@
 	},
 /turf/open/indestructible/ground/outside/dirt/light,
 /area/f13/wasteland)
+"fS" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/effect/decal/cleanable/glitter/blue{
+	plane = -4;
+	layer = 3
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "fT" = (
 /obj/effect/turf_decal/weather/splineplain{
 	dir = 6
@@ -1653,6 +1701,10 @@
 	},
 /turf/open/floor/plating/f13/outside/roof,
 /area/f13/wasteland)
+"fX" = (
+/obj/structure/flora/chomp/thicket2,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "ga" = (
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
@@ -1669,11 +1721,19 @@
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
 	name = "steam";
-	pixel_x = 19
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/effect/decal/cleanable/glitter/blue{
+	plane = -4;
+	layer = 3
 	},
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "gb" = (
@@ -1850,20 +1910,39 @@
 	},
 /area/f13/wasteland)
 "gu" = (
-/obj/structure/chair/comfy/plywood{
-	dir = 8
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/structure/chair/bench{
+	dir = 1;
+	plane = -6
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
 /area/f13/caves)
 "gx" = (
-/obj/structure/wood_counter{
-	color = "#251A17";
-	layer = 2
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
+/obj/structure/table/wood_counter,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -1895,18 +1974,13 @@
 /obj/structure/mirror{
 	pixel_x = 24
 	},
-/obj/structure/wood_counter{
-	color = "#251A17";
-	layer = 2;
-	dir = 4
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 4;
 	color = "#121212"
+	},
+/obj/structure/table/wood_counter{
+	dir = 4;
+	pixel_x = 6
 	},
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building)
@@ -2115,11 +2189,6 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
-"hD" = (
-/obj/structure/window/reinforced/fulltile,
-/obj/structure/grille,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building/massfusion)
 "hF" = (
 /obj/effect/decal/cleanable/dirt/dust{
 	color = "#11ff11"
@@ -2313,6 +2382,37 @@
 	},
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building)
+"iy" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/chair/bench{
+	dir = 1;
+	plane = -6
+	},
+/obj/effect/decal/cleanable/glitter/pink,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "iA" = (
 /obj/effect/turf_decal/weather/splineplain{
 	dir = 4
@@ -2328,8 +2428,7 @@
 "iE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light{
-	dir = 8;
-	pixel_y = 0
+	dir = 8
 	},
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building)
@@ -2356,6 +2455,14 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"iQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/snescontroller{
+	pixel_x = -22;
+	pixel_y = 2
+	},
+/turf/open/floor/wood_common/wood_common_dark,
+/area/f13/building)
 "iV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/curtain/directional/south{
@@ -2398,12 +2505,6 @@
 	color = "#6D6D6D"
 	},
 /area/f13/wasteland)
-"je" = (
-/obj/machinery/door/airlock/hatch{
-	req_one_access_txt = "61"
-	},
-/turf/open/floor/plating,
-/area/f13/building/massfusion)
 "jf" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/f13/outside/roof{
@@ -2516,13 +2617,8 @@
 "jA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/f13/common_food,
-/obj/structure/wood_counter/bend{
-	layer = 2;
+/obj/structure/table/wood_counter/bend{
 	dir = 8
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
@@ -2908,6 +3004,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
+"ln" = (
+/obj/structure/glowshroom{
+	color = "green"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "lp" = (
 /obj/structure/closet/crate/wicker,
 /turf/open/floor/wood_common{
@@ -2985,6 +3087,10 @@
 	},
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building)
+"lB" = (
+/obj/structure/glowshroom/shadowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "lC" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -3113,12 +3219,6 @@
 /obj/structure/car/rubbish1,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"lU" = (
-/obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/libraryconsole/bookmanagement,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "lY" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/house,
@@ -3138,6 +3238,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/building)
+"mh" = (
+/obj/structure/towel_rack{
+	pixel_y = 27
+	},
+/obj/structure/table/wood/bar,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "mk" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
@@ -3223,6 +3330,28 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
+"mu" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/effect/decal/cleanable/glitter/blue,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "mv" = (
 /obj/structure/destructible/tribal_torch/wall/lit/wallcandle{
 	pixel_y = 14;
@@ -3363,13 +3492,8 @@
 "mY" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/f13/common_food,
-/obj/structure/wood_counter{
-	layer = 2;
+/obj/structure/table/wood_counter{
 	dir = 1
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
@@ -3480,6 +3604,12 @@
 	color = "grey"
 	},
 /area/f13/wasteland)
+"nu" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "nx" = (
 /obj/effect/decal/cleanable/dirt/dust{
 	color = "#11ff11"
@@ -3721,12 +3851,6 @@
 	},
 /turf/open/floor/wood_common,
 /area/f13/building)
-"ot" = (
-/obj/machinery/blackbox_recorder,
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "ox" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/boozeomat,
@@ -3749,6 +3873,28 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/wasteland)
+"oz" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "oA" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt/dust{
@@ -4029,29 +4175,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
-"py" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/med_data/syndie{
-	dir = 4;
-	req_one_access = null
-	},
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
-"pB" = (
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
-/obj/structure/wood_counter{
-	color = "#251A17";
-	layer = 2
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/building)
 "pC" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -4201,25 +4324,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
-"qf" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "qk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/curtain{
@@ -4256,6 +4360,12 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building)
+"qr" = (
+/obj/structure/closet{
+	pixel_x = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "qs" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -4274,11 +4384,6 @@
 "qy" = (
 /obj/machinery/microwave/stove{
 	pixel_x = 18
-	},
-/obj/structure/wood_counter{
-	layer = 2;
-	dir = 1;
-	pixel_x = -10
 	},
 /obj/structure/table/wood{
 	layer = 2.5;
@@ -4545,9 +4650,6 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/indestructible/ground/outside/civ/grass0,
 /area/f13/wasteland)
-"rq" = (
-/turf/open/floor/wood_common/wood_common_dark,
-/area/f13/building)
 "rt" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -4900,6 +5002,12 @@
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"sN" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#4F3528"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "sO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust{
@@ -4923,14 +5031,8 @@
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
 	dir = 1
 	},
-/obj/structure/wood_counter{
-	color = "#251A17";
-	dir = 1;
-	layer = 2
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
+/obj/structure/table/wood_counter{
+	dir = 1
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -5087,6 +5189,29 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/wasteland)
+"tC" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/effect/decal/cleanable/glitter/white,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "tD" = (
 /obj/structure/dresser,
 /turf/open/floor/wood_common,
@@ -5276,6 +5401,17 @@
 	},
 /turf/open/indestructible/ground/outside/civ/woodalt,
 /area/f13/building)
+"ur" = (
+/obj/structure/flora/wasteplant/fever_blossom{
+	pixel_y = 20;
+	randomize_xy = 0
+	},
+/obj/structure/flora/wasteplant/fever_blossom{
+	pixel_y = 20;
+	randomize_xy = 0
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "us" = (
 /obj/structure/simple_door/metal/fence/wooden{
 	dir = 2
@@ -5668,18 +5804,13 @@
 /obj/structure/mirror{
 	pixel_x = 24
 	},
-/obj/structure/wood_counter{
-	color = "#251A17";
-	layer = 2;
-	dir = 4
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 4;
 	color = "#121212"
+	},
+/obj/structure/table/wood_counter{
+	dir = 4;
+	pixel_x = 6
 	},
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building)
@@ -6346,8 +6477,19 @@
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
 	name = "steam";
 	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
 	},
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
@@ -6358,7 +6500,10 @@
 	},
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "ym" = (
@@ -6480,6 +6625,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/f13/outside/roof,
 /area/f13/wasteland)
+"yC" = (
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "yD" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -6711,6 +6860,16 @@
 	color = "#6D6D6D"
 	},
 /area/f13/wasteland)
+"zt" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 8
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "zx" = (
 /obj/structure/railing{
 	dir = 4
@@ -6776,6 +6935,33 @@
 	light_range = 2
 	},
 /area/f13/wasteland)
+"zL" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "zO" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -6925,11 +7111,6 @@
 /obj/effect/validball_spawner,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
-"Ay" = (
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "Az" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -6974,24 +7155,6 @@
 	color = "#6D6D6D"
 	},
 /area/f13/wasteland)
-"AD" = (
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 16
-	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_x = 19
-	},
-/turf/open/indestructible/ground/outside/water{
-	name = "hot spring";
-	color = "#BBBBBB"
-	},
-/area/f13/caves)
 "AE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sign/poster/prewar/poster81{
@@ -7120,6 +7283,26 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
+"Bk" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "Bm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/drip,
@@ -7445,15 +7628,10 @@
 /area/f13/building)
 "CJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/wood_counter{
-	layer = 2;
+/obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
-/obj/machinery/light{
+/obj/structure/table/wood_counter{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -7521,14 +7699,6 @@
 	},
 /turf/open/floor/plating/f13/outside/roof,
 /area/f13/wasteland)
-"CT" = (
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "CU" = (
 /obj/structure/fence{
 	dir = 4;
@@ -7553,6 +7723,36 @@
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/hospital)
+"CZ" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/chair/bench{
+	plane = -6
+	},
+/obj/effect/decal/cleanable/glitter/blue,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "Df" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/spacevine,
@@ -7900,20 +8100,6 @@
 	smooth = 1
 	},
 /area/f13/building/hospital)
-"Ex" = (
-/obj/structure/filingcabinet,
-/obj/item/paper/fluff/ruins/listeningstation/reports/april,
-/obj/item/paper/fluff/ruins/listeningstation/reports/may,
-/obj/item/paper/fluff/ruins/listeningstation/reports/june,
-/obj/item/paper/fluff/ruins/listeningstation/reports/july,
-/obj/item/paper/fluff/ruins/listeningstation/reports/august,
-/obj/item/paper/fluff/ruins/listeningstation/reports/september,
-/obj/item/paper/fluff/ruins/listeningstation/reports/october,
-/obj/item/paper/fluff/ruins/listeningstation/receipt,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/paper/fluff/ruins/listeningstation/odd_report,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "Ey" = (
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/hospital)
@@ -8000,6 +8186,36 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/mineral/random/low_chance,
+/area/f13/caves)
+"EL" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/chair/bench{
+	dir = 1;
+	plane = -6
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
 /area/f13/caves)
 "EN" = (
 /obj/structure/car/rubbish2,
@@ -8185,33 +8401,29 @@
 	},
 /area/f13/wasteland)
 "Fs" = (
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam"
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
 	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 16
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
 	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_x = 19
+/obj/structure/flora/wild_plant/flower/white{
+	randomize_xy = 0;
+	pixel_x = 4;
+	pixel_y = 24
 	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 12;
-	pixel_x = 17
+/obj/structure/flora/wild_plant/flower/pink_three{
+	randomize_xy = 0;
+	pixel_x = 4;
+	pixel_y = 10
 	},
-/turf/open/indestructible/ground/outside/water{
-	name = "hot spring";
-	color = "#BBBBBB"
+/obj/structure/flora/wild_plant/flower/white{
+	randomize_xy = 0;
+	pixel_x = 4;
+	pixel_y = -6
+	},
+/turf/open/indestructible/ground/inside/mountain{
+	color = "#B18770"
 	},
 /area/f13/caves)
 "Ft" = (
@@ -8464,9 +8676,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
-"Gy" = (
-/turf/closed/indestructible/vaultdoor,
-/area/f13/building/massfusion)
 "GA" = (
 /obj/machinery/light{
 	dir = 8;
@@ -8615,14 +8824,8 @@
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
 	dir = 1
 	},
-/obj/structure/wood_counter{
-	color = "#251A17";
-	dir = 1;
-	layer = 2
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
+/obj/structure/table/wood_counter{
+	dir = 1
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -8654,6 +8857,17 @@
 /obj/effect/spawner/lootdrop/f13/uncommon,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
+"Hg" = (
+/obj/effect/turf_decal/siding/wood/end,
+/obj/structure/flora/wild_plant/flower/purple_two{
+	pixel_x = 4;
+	pixel_y = 8;
+	randomize_xy = 0
+	},
+/turf/open/indestructible/ground/inside/mountain{
+	color = "#B18770"
+	},
+/area/f13/caves)
 "Hi" = (
 /obj/structure/sign/painting/library{
 	pixel_y = 32
@@ -8700,6 +8914,22 @@
 	color = "#999999"
 	},
 /area/f13/wasteland)
+"Hq" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "Hr" = (
 /obj/structure/fence/wooden{
 	pixel_x = 13
@@ -9020,14 +9250,6 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
-"IF" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "IG" = (
 /obj/effect/turf_decal/weather/splineplain{
 	dir = 1
@@ -9174,17 +9396,32 @@
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
-	name = "steam"
+	name = "steam";
+	pixel_y = 16
 	},
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
 	name = "steam";
-	pixel_y = 16
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	plane = -6
 	},
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "Jo" = (
@@ -9281,6 +9518,34 @@
 	color = "#6D6D6D"
 	},
 /area/f13/wasteland)
+"JF" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/effect/decal/cleanable/glitter/white,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "JG" = (
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
@@ -9297,14 +9562,7 @@
 /area/f13/caves)
 "JK" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
-/obj/structure/wood_counter{
-	color = "#251A17";
-	layer = 2
-	},
+/obj/structure/table/wood_counter,
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -9365,21 +9623,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
-"JS" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/item/multitool{
-	pixel_x = 9
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/flashlight/lamp{
-	pixel_y = 14
-	},
-/obj/item/binoculars,
-/obj/item/binoculars,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "JT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood_wide,
@@ -9397,13 +9640,28 @@
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
 	name = "steam";
 	pixel_y = 12;
 	pixel_x = 17
 	},
+/obj/effect/decal/cleanable/glitter/white,
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "Ka" = (
@@ -9781,6 +10039,37 @@
 	},
 /turf/open/floor/grass/fakebasalt,
 /area/f13/building)
+"Lu" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	plane = -6
+	},
+/obj/effect/decal/cleanable/glitter/blue,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "Lw" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated{
@@ -9890,8 +10179,12 @@
 	},
 /area/f13/wasteland)
 "LO" = (
-/obj/structure/table/wood/bar,
-/obj/structure/bedsheetbin/towel,
+/obj/structure/closet{
+	pixel_x = 8
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	pixel_x = -10
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "LP" = (
@@ -9987,14 +10280,6 @@
 	color = "#FFFF44"
 	},
 /area/f13/wasteland)
-"Me" = (
-/obj/structure/chair/office/dark{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "Mf" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10008,9 +10293,6 @@
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
-"Ml" = (
-/turf/open/transparent/openspace,
-/area/f13/building/massfusion)
 "Mm" = (
 /obj/structure/chair/bench{
 	dir = 1
@@ -10469,6 +10751,36 @@
 /obj/effect/validball_spawner,
 /turf/open/floor/wood_common,
 /area/f13/caves)
+"NM" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	plane = -6
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "NN" = (
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/roof,
@@ -10530,6 +10842,19 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
+"Oa" = (
+/obj/effect/turf_decal/siding/wood/end{
+	dir = 1
+	},
+/obj/structure/flora/wild_plant/flower/purple_two{
+	pixel_x = 4;
+	pixel_y = 8;
+	randomize_xy = 0
+	},
+/turf/open/indestructible/ground/inside/mountain{
+	color = "#B18770"
+	},
+/area/f13/caves)
 "Oc" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/stone_tile/surrounding_tile{
@@ -10619,21 +10944,6 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/indestructible/ground/outside/civ/grass0,
 /area/f13/wasteland)
-"Oy" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "Oz" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
@@ -10721,6 +11031,19 @@
 	color = "#6D6D6D"
 	},
 /area/f13/wasteland)
+"OW" = (
+/obj/structure/chair/bench{
+	plane = -6
+	},
+/obj/effect/decal/cleanable/glitter/pink,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "OX" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/bunker,
@@ -10764,13 +11087,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/hospital)
-"Pk" = (
-/obj/machinery/computer/message_monitor,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/paper/monitorkey,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "Pl" = (
 /obj/structure/car/rubbish2{
 	icon_state = "car_rubish3";
@@ -10812,6 +11128,10 @@
 	color = "#a98c5d"
 	},
 /turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
+"Pt" = (
+/obj/structure/flora/chomp/shrub4,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Pv" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -10908,6 +11228,37 @@
 	color = "grey"
 	},
 /area/f13/wasteland)
+"PM" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/effect/decal/cleanable/glitter/blue{
+	plane = -4;
+	layer = 3
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "PO" = (
 /obj/effect/turf_decal/weather/dirt{
 	color = "#a98c5d";
@@ -11055,14 +11406,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
-/obj/structure/wood_counter{
-	color = "#251A17";
-	dir = 1;
-	layer = 2
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
+/obj/structure/table/wood_counter{
+	dir = 1
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -11116,13 +11461,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"QA" = (
-/obj/machinery/telecomms/relay/preset/ruskie{
-	use_power = 0
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "QB" = (
 /obj/structure/flora/tree/jungle/small{
 	color = "#999999"
@@ -11181,23 +11519,8 @@
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building)
 "QJ" = (
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_x = 19
-	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 12;
-	pixel_x = 17
-	},
-/turf/open/indestructible/ground/outside/water{
-	name = "hot spring";
-	color = "#BBBBBB"
-	},
+/obj/structure/flora/chomp/potplant2,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "QL" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -11324,16 +11647,12 @@
 	name = "steam";
 	pixel_x = 19
 	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 12;
-	pixel_x = 17
-	},
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "Rb" = (
@@ -11342,6 +11661,35 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
+"Rc" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/chair/bench{
+	plane = -6
+	},
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "Re" = (
 /obj/structure/rug/big/rug_blue{
 	dir = 4
@@ -11570,24 +11918,6 @@
 /obj/structure/flora/tree/oak_five,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
-"Sj" = (
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "Sk" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -11925,11 +12255,27 @@
 	},
 /area/f13/wasteland)
 "Ta" = (
-/obj/structure/table/wood/bar,
-/obj/machinery/light/floor{
-	plane = -6
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/effect/decal/cleanable/glitter/blue,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
 /area/f13/caves)
 "Tb" = (
 /obj/structure/tires/five,
@@ -11952,17 +12298,6 @@
 	color = "#6D6D6D"
 	},
 /area/f13/wasteland)
-"Tg" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
-/obj/machinery/computer/telecomms/server{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "Ti" = (
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/f13/wood,
@@ -12318,10 +12653,6 @@
 	color = "grey"
 	},
 /area/f13/wasteland)
-"Ux" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/f13/building/massfusion)
 "Uy" = (
 /mob/living/simple_animal/hostile/renegade/soldier{
 	name = "Joe Bob"
@@ -12342,30 +12673,6 @@
 	name = "air"
 	},
 /area/f13/wasteland)
-"UC" = (
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam"
-	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 16
-	},
-/obj/structure/spacevine{
-	icon = 'icons/effects/effects.dmi';
-	icon_state = "smoke";
-	name = "steam";
-	pixel_y = 12;
-	pixel_x = 17
-	},
-/turf/open/indestructible/ground/outside/water{
-	name = "hot spring";
-	color = "#BBBBBB"
-	},
-/area/f13/caves)
 "UD" = (
 /obj/structure/table/wood{
 	density = 0
@@ -12408,19 +12715,16 @@
 /obj/structure/towel_rack{
 	pixel_y = 27
 	},
+/obj/structure/table/wood/bar,
+/obj/structure/bedsheetbin/towel,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "UK" = (
 /obj/machinery/light,
-/obj/structure/wood_counter{
-	layer = 2;
+/obj/machinery/microwave,
+/obj/structure/table/wood_counter{
 	dir = 1
 	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
-/obj/machinery/microwave,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
 "UL" = (
@@ -12500,6 +12804,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/building)
+"UX" = (
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "UY" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -12543,13 +12854,11 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "Vk" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#4F3528"
-	},
 /obj/structure/curtain{
 	color = "#1F1F1F"
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood_common/wood_common_dark,
 /area/f13/caves)
 "Vl" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -12706,14 +13015,6 @@
 /area/f13/wasteland)
 "VI" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/wood_counter/bend{
-	dir = 1;
-	layer = 2
-	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
-	},
 /obj/item/kirbyplants{
 	icon = 'modular_coyote/icons/objects/miscellaneous.dmi';
 	icon_state = "pot_2";
@@ -12721,6 +13022,9 @@
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/maunamug,
+/obj/structure/table/wood_counter{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
 "VJ" = (
@@ -13248,6 +13552,28 @@
 /obj/effect/validball_spawner,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
+"XE" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam"
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/effect/decal/cleanable/glitter/white,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "XF" = (
 /obj/structure/bonfire/prelit,
 /turf/open/indestructible/ground/outside/roof,
@@ -13467,6 +13793,39 @@
 	color = "#CECECE"
 	},
 /area/f13/wasteland)
+"Yq" = (
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_y = 12;
+	pixel_x = 17
+	},
+/obj/structure/chair/bench{
+	dir = 8;
+	plane = -6
+	},
+/obj/effect/decal/cleanable/glitter/pink,
+/turf/open/indestructible/ground/outside/water{
+	name = "hot spring";
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
+	},
+/area/f13/caves)
 "Yr" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -13656,6 +14015,17 @@
 /obj/machinery/processor/chopping_block,
 /turf/open/floor/wood_common,
 /area/f13/building)
+"YV" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/misc/bathrobe,
+/obj/item/clothing/under/misc/bathrobe,
+/obj/item/clothing/under/misc/bathrobe,
+/obj/item/clothing/under/misc/bathrobe,
+/obj/machinery/light/floor{
+	plane = -6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "YX" = (
 /obj/structure/simple_door/wood,
 /obj/item/lock_bolt{
@@ -13665,6 +14035,12 @@
 	color = "#779999"
 	},
 /area/f13/building)
+"YY" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "YZ" = (
 /obj/structure/spacevine{
 	icon = 'icons/effects/effects.dmi';
@@ -13675,12 +14051,31 @@
 	icon = 'icons/effects/effects.dmi';
 	icon_state = "smoke";
 	name = "steam";
+	pixel_y = 16
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
+	pixel_x = 19
+	},
+/obj/structure/spacevine{
+	icon = 'icons/effects/effects.dmi';
+	icon_state = "smoke";
+	name = "steam";
 	pixel_y = 12;
 	pixel_x = 17
 	},
+/obj/structure/chair/bench{
+	dir = 1;
+	plane = -6
+	},
 /turf/open/indestructible/ground/outside/water{
 	name = "hot spring";
-	color = "#BBBBBB"
+	color = "#90DBFE";
+	light_range = 2;
+	light_power = 2;
+	light_color = "#BAF8FF"
 	},
 /area/f13/caves)
 "Za" = (
@@ -13757,6 +14152,12 @@
 "Zo" = (
 /turf/closed/wall/f13/coyote/darkwoodwall,
 /area/f13/building)
+"Zp" = (
+/obj/structure/flora/wasteplant/fever_blossom{
+	randomize_xy = 0
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "Zq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood{
@@ -13838,16 +14239,12 @@
 /area/f13/building)
 "ZK" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/wood_counter{
-	layer = 2
-	},
 /obj/structure/sink/kitchen{
 	pixel_y = 19;
 	layer = 1.9
 	},
-/obj/structure/table/wood{
-	layer = 2.5;
-	alpha = 1
+/obj/structure/table/wood_counter{
+	pixel_y = 3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
@@ -13896,22 +14293,6 @@
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/wood_common,
 /area/f13/building)
-"ZX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/building/massfusion)
 "ZZ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/folding{
@@ -46577,7 +46958,7 @@ ed
 ed
 ed
 ed
-Xr
+ed
 ed
 jk
 Zo
@@ -46830,12 +47211,12 @@ ed
 ed
 Xr
 ed
-ed
-ed
-ed
-ed
-ed
-Xr
+jk
+jk
+jk
+jk
+jk
+jk
 jk
 Zo
 Zo
@@ -47086,13 +47467,13 @@ ed
 Xr
 ed
 ed
-ed
-ed
-ed
-ed
-ed
-ed
-ed
+jk
+jk
+Jm
+Lu
+Yq
+NM
+jk
 jk
 Zo
 wP
@@ -47343,13 +47724,13 @@ ed
 Xr
 ed
 ed
-ed
-ed
-ed
-ed
-ed
-ed
-ed
+jk
+EL
+fS
+tC
+Hq
+PM
+Rc
 jk
 Zo
 mf
@@ -47600,13 +47981,13 @@ ed
 ed
 ed
 ed
-ed
 jk
-jk
-jk
-jk
-jk
-jk
+gu
+XE
+en
+ab
+oz
+al
 jk
 Zo
 rd
@@ -47857,13 +48238,13 @@ ed
 ed
 ed
 ed
-ed
 jk
-jk
-FS
+iy
+Bk
+mu
 eb
-FS
-jk
+Ta
+CZ
 jk
 Zo
 LS
@@ -48113,14 +48494,14 @@ ed
 ed
 Xr
 ed
+ed
 jk
-jk
-jk
-QZ
+YZ
+JF
 ga
 QZ
-ga
-jk
+zL
+OW
 jk
 Zo
 LW
@@ -48370,14 +48751,14 @@ ed
 Xr
 ed
 ed
+ed
 jk
 jk
-ga
-AD
+Ta
 yl
 JY
-en
-ga
+nu
+jk
 jk
 Zo
 Zo
@@ -48627,13 +49008,13 @@ ed
 ed
 ed
 ed
+ed
+ed
 jk
-FS
-ga
-YZ
-QZ
-AD
-yl
+zt
+YY
+YY
+bB
 QJ
 jk
 jk
@@ -48642,7 +49023,7 @@ jk
 Zo
 fy
 YS
-pB
+gx
 OL
 Qo
 IU
@@ -48884,14 +49265,14 @@ ed
 ed
 ed
 ed
+ed
+ed
 jk
-eb
-QZ
-Jm
-AD
-Jm
-QJ
-ga
+ur
+FS
+FS
+FS
+ln
 jk
 jk
 jk
@@ -49141,22 +49522,22 @@ ed
 ed
 ed
 ed
+ed
+ed
 jk
-FS
-ga
-UC
-UC
-AD
-en
+Pt
 FS
 FS
-jk
+FS
+FS
+Ft
+Zp
 jk
 jk
 Zo
 FK
 xN
-pB
+gx
 OL
 GY
 IU
@@ -49398,17 +49779,17 @@ Xr
 ed
 ed
 ed
+ed
+ed
 jk
-FS
-Fs
-QJ
-Fs
-en
-FS
+yC
+UX
+UX
+UX
 FS
 FS
 FS
-jk
+fX
 jk
 Zo
 wS
@@ -49655,17 +50036,17 @@ ed
 ed
 ed
 ed
+ed
+ed
 jk
 jk
-FS
-FS
-FS
-FS
-FS
+Oa
+Fs
+Hg
 jk
-UJ
+YV
 FS
-FS
+lB
 jk
 Zo
 We
@@ -49912,19 +50293,19 @@ Xr
 ed
 Xr
 ed
+ed
+ed
+ed
 jk
 jk
-Ta
-gu
-gu
-Ta
 jk
 jk
-UJ
-eb
+jk
+mh
 FS
+sN
 Vk
-rq
+NO
 NO
 lA
 We
@@ -50170,18 +50551,18 @@ Xr
 Xr
 ed
 ed
-jk
-jk
-jk
-jk
-jk
+ed
+ed
+ed
+ed
+ed
 jk
 jk
 UJ
 FS
-FS
+sN
 Vk
-rq
+NO
 JL
 lA
 We
@@ -50430,12 +50811,12 @@ ed
 ed
 ed
 ed
+ed
+ed
 jk
 jk
 jk
-jk
-jk
-ab
+qr
 LO
 jk
 Zo
@@ -56634,7 +57015,7 @@ Os
 Mf
 Zo
 nW
-NO
+iQ
 NO
 Ru
 iV
@@ -68710,14 +69091,14 @@ hm
 hm
 hm
 hm
-Gy
-hD
-hD
-hD
-hD
-hD
-hD
-Gy
+IO
+IO
+yP
+lF
+yP
+lF
+yP
+lF
 yP
 lF
 IO
@@ -68966,15 +69347,15 @@ hm
 hm
 hm
 hm
-Gy
-Gy
-Tg
-IF
-aC
-py
-Ex
-ZX
-je
+IO
+IO
+yP
+lF
+lF
+lF
+IO
+lF
+IO
 lF
 IO
 lF
@@ -69223,15 +69604,15 @@ hm
 hm
 hm
 hm
-Gy
-Pk
-Me
-CT
-Sj
-qf
-Ux
-cR
-hD
+lF
+IO
+IO
+IO
+yP
+lF
+IO
+lF
+IO
 lF
 yP
 IO
@@ -69480,15 +69861,15 @@ hm
 hm
 hm
 hm
-Gy
-lU
-Me
-Ay
-ZX
-Oy
-Oy
-Ml
-hD
+IO
+IO
+lF
+IO
+IO
+IO
+IO
+yP
+lF
 yP
 lF
 lF
@@ -69737,15 +70118,15 @@ hm
 hm
 hm
 hm
-Gy
-Gy
-Gy
-ot
-QA
-fH
-JS
-Gy
-Gy
+lF
+IO
+yP
+yP
+lF
+lF
+IO
+lF
+IO
 FI
 FI
 FI
@@ -69994,15 +70375,15 @@ hm
 hm
 hm
 hm
-hm
-hm
-Gy
-Gy
-Gy
-Gy
-Gy
-Gy
-Gy
+yP
+yP
+lF
+IO
+yP
+yP
+yP
+lF
+IO
 yP
 yP
 yP

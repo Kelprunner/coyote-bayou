@@ -154,25 +154,19 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 ))
 //Nash/Oasis
 GLOBAL_LIST_INIT(oasis_positions, list(
-	//"High Alderperson",
-	//"Councilperson",
-	"Sheriff",
-	"New Boston Security",
-	//"Deputy Mayor",
-	//"Farmer",
-	//"Prospector",
-	//"Doctor",
-	//"Detective",
-	//"Guild Financier",
+	"Citizen",
+	"Farmer",
+	"Prospector",
 	"Town Doctor",
 	"Town Scientist",
-	//"Texarkana Quartermaster",
 	"Guild Worker",
 	"Barkeep",
-	"Citizen",
-	//"Preacher",
-	"Vertibird Pilot",
-	//"New Boston Librarian",
+	"Club Manager",
+	"Club Worker",
+	"Preacher",
+	"Librarian",
+	"Texarkana Ranger",
+	"Adventurer"
 ))
 
 //Den Citizenship
@@ -257,8 +251,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Far-Lands Tribals",
 	"Wastelander",
 	"Radio Operator",
-	"Backstage Character",
-	"Texarkana Ranger",
+	"Backstage Character"
 ))
 
 GLOBAL_LIST_INIT(tunnelrats_positions, list(
@@ -329,6 +322,16 @@ GLOBAL_LIST_INIT(followers_positions, list(
 	"Senior Scientist",
 ))
 
+GLOBAL_LIST_INIT(reclaimer_positions, list(
+	"Reclaimer Archeologist",
+	"Reclaimer Slimeologist",
+	"Reclaimer Researcher",
+	"Reclaimer Mechanic",
+	"Reclaimer Nanite Specialist",
+	"Reclaimer Guard",
+	"Reclaimer Healer",
+))
+
 GLOBAL_LIST_INIT(guild_positions, list(
 	"Guild Cataloger",
 	"Guild Healer",
@@ -356,15 +359,16 @@ GLOBAL_LIST_INIT(position_categories, list(
 	// EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#323232"),
 	// EXP_TYPE_KHAN = list("jobs" = khan_positions, "color" = "#006666"),
 	"New Boston" = list("jobs" = oasis_positions, "color" = "#d7b088"),
-	"Den" = list("jobs" = den_positions, "color" = "#d7b088"),
-	"Guild" = list("jobs" = guild_positions, "color" = "#d45b3d"),
+	//"Den" = list("jobs" = den_positions, "color" = "#d7b088"),
+	"Reclaimers" = list("jobs" = reclaimer_positions, "color" = "#a43dd4"),
+	//"Guild" = list("jobs" = guild_positions, "color" = "#d45b3d"),
 	//"Garland" = list("jobs" = gar_positions, "color" = "#d7b088"),
-	EXP_TYPE_SILICON = list("jobs" = silicon_positions, "color" = "#4a4a4a"),
+	//EXP_TYPE_SILICON = list("jobs" = silicon_positions, "color" = "#4a4a4a"),
 	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#006666"),
 	//EXP_TYPE_BIKER = list("jobs" = biker_positions, "color" = "#eb872f"),
-	EXP_TYPE_CLUB = list("jobs" = heavensnight_positions, "color" = "#c94b8a"),
+	//EXP_TYPE_CLUB = list("jobs" = heavensnight_positions, "color" = "#c94b8a"),
 	//"debug" = list("jobs" = debug_positions, "color" = "#ff00ee"),
-	"Tunnel Rats" = list("jobs" = tunnelrats_positions, "color" = "#f81717"),
+	//"Tunnel Rats" = list("jobs" = tunnelrats_positions, "color" = "#f81717"),
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -384,6 +388,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_OUTLAW = list("titles" = list("Outlaw","Den Mob Boss","Den Mob Enforcer","Den Doctor",)),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
 	EXP_TYPE_OASIS = list("titles" = oasis_positions ),
+	EXP_TYPE_RECLAIMER = list("titles" = reclaimer_positions ),
 	EXP_TYPE_GUILD = list("titles" = guild_positions ),
 	EXP_TYPE_LEGION = list("titles" = legion_positions),
 	EXP_TYPE_NCR = list("titles" = ncr_positions),

@@ -8,6 +8,11 @@
 	name = "ballcap"
 	path = /obj/item/clothing/head/soft/mime
 
+/datum/gear/head/chameleon
+	name = "chameleon hat"
+	path = /obj/item/clothing/head/chameleon
+	cost = 0
+
 /datum/gear/head/beanie
 	name = "beanie"
 	path = /obj/item/clothing/head/beanie
@@ -1077,6 +1082,12 @@
 /datum/gear/head/ballistichelmets/number10
 	name = "MK6 Helmet"
 	path = /obj/item/clothing/head/kevlarhelmet/ukhelmet
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMETS
+	cost = 2
+
+/datum/gear/head/ballistichelmets/fiend
+	name = "Fiend Helmet"
+	path = /obj/item/clothing/head/helmet/f13/fiend
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_HELMETS
 	cost = 2
 

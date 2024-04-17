@@ -35,14 +35,13 @@
 
 /datum/gear/suit/suit_gear_harness
 	name = "secondary gear harness"
-	path = /obj/item/clothing/suit/armor/outfit/vest/utility/gear_harness
+	path = /obj/item/clothing/suit/chameleon/harness/second_gear_harness
 	cost = 0
 
 /datum/gear/suit/suit_gear_harness/drip
 	name = "drip harness"
 	path = /obj/item/clothing/suit/chameleon/dripharness
 	cost = 1
-
 
 /datum/gear/suit/suit_gear_harness/light
 	name = "light harness"
@@ -1840,6 +1839,11 @@
 /datum/gear/suit/aurora/abbasi
 	name = "Abbasi Armor"
 	path = /obj/item/clothing/suit/aurora/abbasi_carrier
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_ARMOR
+
+/datum/gear/suit/aurora/lighttribal
+	name = "Tribal Armor"
+	path = /obj/item/clothing/suit/armor/light/tribal
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_ARMOR
 
 /datum/gear/suit/aurora/freedomcoat

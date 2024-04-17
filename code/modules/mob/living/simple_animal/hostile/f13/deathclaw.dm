@@ -59,12 +59,16 @@
 	low_health_threshold = 0.5
 	ignore_other_mobs = TRUE // peaceful giants that HATE PEOPLE!!!!
 	variation_list = list(
-		MOB_RETREAT_DISTANCE_LIST(0, 0, 0, 3, 3),
+		MOB_RETREAT_DISTANCE_LIST(0, 0, 0, 1),
 		MOB_RETREAT_DISTANCE_CHANGE_PER_TURN_CHANCE(65),
 		MOB_MINIMUM_DISTANCE_LIST(0, 0, 0, 1),
 		MOB_MINIMUM_DISTANCE_CHANGE_PER_TURN_CHANCE(30),
 	)
 	despawns_when_lonely = FALSE
+	loot = list(/obj/effect/spawner/lootdrop/f13/rare, /obj/effect/gibspawner/human)
+	loot_drop_amount = 1
+	loot_amount_random = TRUE
+	am_important = TRUE
 
 /mob/living/simple_animal/hostile/deathclaw/Initialize()
 	. = ..()
@@ -159,6 +163,9 @@
 	color_mad = rgb(113, 105, 100)
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
 							/obj/item/stack/sheet/animalhide/deathclaw = 3)
+	loot = list(/obj/effect/spawner/lootdrop/f13/rare, /obj/effect/gibspawner/human)
+	loot_drop_amount = 3
+	loot_amount_random = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/deathclaw
 	name = "deathclaw"
@@ -391,6 +398,9 @@
 	melee_damage_lower = 25
 	melee_damage_upper = 55
 	footstep_type = FOOTSTEP_MOB_HEAVY
+	loot = list(/obj/effect/spawner/lootdrop/f13/rare, /obj/effect/gibspawner/human)
+	loot_drop_amount = 5
+	loot_amount_random = TRUE
 
 /mob/living/simple_animal/hostile/deathclaw/legendary/death(gibbed)
 	var/turf/T = get_turf(src)
@@ -412,6 +422,9 @@
 	melee_damage_lower = 40
 	melee_damage_upper = 60
 	footstep_type = FOOTSTEP_MOB_HEAVY
+	loot = list(/obj/effect/spawner/lootdrop/f13/rare, /obj/effect/gibspawner/human)
+	loot_drop_amount = 10
+	loot_amount_random = TRUE
 
 
 /// Code for deathclaw charging. It barely works

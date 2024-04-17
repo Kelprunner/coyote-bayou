@@ -706,6 +706,7 @@ SUBSYSTEM_DEF(shuttle)
 	)
 	return "[pick(town_names)]"
 
+
 /datum/controller/subsystem/shuttle/proc/get_train_name()
 	if(prob(3))
 		if(prob(10))

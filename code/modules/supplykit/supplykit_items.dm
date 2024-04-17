@@ -25,7 +25,7 @@
 		if(I.limited_stock < 0 && !I.cant_discount && I.item && I.cost > 1)
 			sale_items += I
 	if(allow_sales)
-		for(var/i in 1 to 10)
+		for(var/i in 1 to 15)
 			var/datum/supplykit_item/I = pick_n_take(sale_items)
 			var/datum/supplykit_item/A = new I.type
 			var/discount = A.get_discount()
@@ -133,6 +133,7 @@
 /datum/supplykit_item/ammospec
 	category = "Special Ammunition"
 	surplus = 20
+	cost = 5
 
 /datum/supplykit_item/explosives
 	category = "Explosives"

@@ -58,7 +58,7 @@
 	item = /obj/item/stack/sheet/prewar/five
 	cost = 5
 
-/datum/supplykit_item/materials/
+/datum/supplykit_item/materials/glass
 	name = "Glass Sheets"
 	desc = "Fifty glass sheets, for making windows and tools."
 	item = /obj/item/stack/sheet/glass/fifty
@@ -70,7 +70,7 @@
 	item = /obj/item/stack/sheet/leather/five
 	cost = 5
 
-/datum/supplykit_item/materials/
+/datum/supplykit_item/materials/titanium
 	name = "Titanium Sheets"
 	desc = "twenty five sturdy sheets for advanced construction."
 	item = /obj/item/stack/sheet/mineral/titanium/twentyfive
