@@ -393,6 +393,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	/// Versioning hack! Versioning hack! Versioning hack!
 	var/list/current_version = list()
+	/// Game prefs-related stuff
+	var/list/current_revision = list() // Have fun distinguishing between these two
 
 	var/fuzzy = FALSE //Fuzzy scaling
 
@@ -402,6 +404,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/up_waddle_time = 1
 	/// How fast the mob wobbles side to side.
 	var/side_waddle_time = 2
+
+	/// Button to switch from input bar to hotkey mode.
+	var/input_mode_hotkey = "Ctrl+Tab"
 
 /datum/preferences/New(client/C)
 	parent = C
@@ -1342,6 +1347,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		if(GAME_PREFERENCES_TAB) // Game Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>General Settings</h2>"
+			dat += "<b>Input Mode Hotkey:</b> <a href='?_src_=prefs;task=input;preference=input_mode_hotkey'>[input_mode_hotkey]</a><br>"
 			dat += "<b>UI Style:</b> <a href='?_src_=prefs;task=input;preference=ui'>[UI_style]</a><br>"
 			dat += "<b>tgui Monitors:</b> <a href='?_src_=prefs;preference=tgui_lock'>[(tgui_lock) ? "Primary" : "All"]</a><br>"
 			dat += "<b>tgui Style:</b> <a href='?_src_=prefs;preference=tgui_fancy'>[(tgui_fancy) ? "Fancy" : "No Frills"]</a><br>"
@@ -3612,6 +3618,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if (!isnull(desiredfps))
 						clientfps = desiredfps
 						parent.fps = desiredfps
+				if("input_mode_hotkey")
+					if(input_mode_hotkey == "Tab")
+						input_mode_hotkey = "Ctrl+Tab"
+					else
+						input_mode_hotkey = "Tab"
+					parent.change_input_toggle_key(input_mode_hotkey)
+					
 				if("ui")
 					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in GLOB.available_ui_styles
 					if(pickedui)
