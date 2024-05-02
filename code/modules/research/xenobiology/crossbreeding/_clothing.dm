@@ -98,7 +98,7 @@ Slimecrossing Armor
 
 /obj/item/clothing/head/peaceflower
 	name = "entrancing bud"
-	desc = "An extremely addictive flower, full of peace magic. This rare flower is not often seen due to its entrancing pacifying effects when worn."
+	desc = "An extremely addictive flower, full of peace magic. This rare flower is not often seen due to its entrancing pacifying effects when worn. Its behavior can be altered with shift+ctrl click"
 	icon = 'icons/obj/slimecrossing.dmi'
 	icon_state = "peaceflower1"
 	item_state = "peaceflower1"
@@ -118,15 +118,16 @@ Slimecrossing Armor
 	throw_range = 3
 
 
-/obj/item/clothing/head/peaceflower/equipped(mob/living/carbon/human/user, slot, mob/living/carbon/C)
+/obj/item/clothing/head/peaceflower/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(slot == SLOT_HEAD)
 		ADD_TRAIT(user, TRAIT_PACIFISM, "peaceflower_[REF(src)]")
+		user.AddElement(/datum/element/photosynthesis, -1, -1, -1, -1, 4, 0.5, 0.2, 0)
 
-/obj/item/clothing/head/peaceflower/dropped(mob/living/carbon/human/user, mob/living/carbon/C)
+/obj/item/clothing/head/peaceflower/dropped(mob/living/carbon/human/user)
 	..()
 	REMOVE_TRAIT(user, TRAIT_PACIFISM, "peaceflower_[REF(src)]")
-
+	user.RemoveElement(/datum/element/photosynthesis, -1, -1, -1, -1, 4, 0.5, 0.2, 0)
 
 /obj/item/clothing/head/peaceflower/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 
@@ -138,15 +139,11 @@ Slimecrossing Armor
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(src == C.head)
+			to_chat(user, span_notice("You begin channeling the flower to reduce your radiation."))
 			if(do_after(user, 5 SECONDS, target = C, allow_movement = TRUE))
-				C.reagents?.add_reagent(/datum/reagent/medicine/medbotchem, 10)
-				C.adjustBruteLoss(-10, include_roboparts = TRUE) //HEALS
-				C.adjustOxyLoss(-10)
-				C.adjustFireLoss(-10, include_roboparts = TRUE) // Effective on robots and people with prosthetics now
-				C.adjustToxLoss(-10, TRUE, FALSE) //heals TOXINLOVERs (It should actually do that now)
-				C.adjustStaminaLoss(-30)
-				to_chat(user, span_warning("<b style='color:pink'>You feel at peace.</b>"))
+				C.reagents?.add_reagent(/datum/reagent/medicine/radaway, 10)
 				slurpinlumens = FALSE
+				to_chat(user, span_notice("Your radiation slowly fades away.."))
 		slurpinlumens = FALSE
 	else
 		to_chat(user, span_notice("You were interrupted."))
@@ -161,18 +158,22 @@ Slimecrossing Armor
 /obj/item/clothing/head/peaceflower/CtrlShiftClick(mob/user)
 	var/static/list/choices = list(
 			"Light On" = image(icon = 'icons/fallout/objects/items.dmi', icon_state = "match_lit"),
-			"Light Off" = image(icon = 'icons/fallout/objects/items.dmi', icon_state = "match_unlit")
+			"Light Off" = image(icon = 'icons/fallout/objects/items.dmi', icon_state = "match_unlit"),
+			"Destroy Flower" = image(icon = 'icons/fallout/objects/bureaucracy.dmi', icon_state = "paperplane_onfire")
 		)
 	var/choice = show_radial_menu(user, src, choices, radius = 32, require_near = TRUE)
 	switch(choice)
 		if("Light Off")
 			set_light_on(FALSE)
-			/*user.AddRemove(/datum/element/photosynthesis, light_bruteheal = -1, light_burnheal = -1, light_toxheal = -1, light_oxyheal = -1, light_nutrition_gain_factor = 4)*/
 			balloon_alert(user, "The flower closes.")
 		if("Light On") // The photosynth thing works, but literally only once. I don't know how to make it work constantly.
-			/*user.AddElement(/datum/element/photosynthesis, light_bruteheal = -1, light_burnheal = -1, light_toxheal = -1, light_oxyheal = -1, light_nutrition_gain_factor = 4)*/
 			set_light_on(TRUE)
 			balloon_alert(user, "The flower blooms")
+		if("Destroy Flower")
+			to_chat(user, span_notice("The flower begins to wither atop your head."))
+			if(do_after(user, 15 SECONDS, stay_close = FALSE))
+				user.RemoveElement(/datum/element/photosynthesis, -1, -1, -1, -1, 4, 0.5, 0.2, 0)
+				qdel(src)
 		else
 			return
 
