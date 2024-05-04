@@ -114,6 +114,10 @@
 	loot = list(/obj/effect/spawner/lootdrop/f13/uncommon, /obj/effect/gibspawner/larva)
 	loot_drop_amount = 1
 	loot_amount_random = TRUE
+	extra_projectiles = 3
+	ranged = TRUE
+	projectiletype = /obj/item/projectile/magic/kelpmagic/magmaspray/weak
+	projectilesound = 'sound/weapons/fire03.ogg'
 
 /mob/living/simple_animal/hostile/fireant/Initialize()
 	. = ..()
@@ -121,7 +125,7 @@
 /mob/living/simple_animal/hostile/fireant/Aggro()
 	..()
 	summon_backup(10)
-
+/*
 /mob/living/simple_animal/hostile/fireant/AttackingTarget()
 	. = ..()
 	var/atom/my_target = get_target()
@@ -129,7 +133,7 @@
 		return
 	var/mob/living/carbon/human/H = my_target
 	H.reagents.add_reagent(/datum/reagent/hellwater, 1)
-
+*/
 // ANT QUEEN
 /mob/living/simple_animal/hostile/giantantqueen
 	name = "giant ant queen"
@@ -585,7 +589,7 @@
 		MOB_COLOR_VARIATION(50, 50, 50, 255, 255, 255),
 		MOB_SPEED_LIST(2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(100),
-		MOB_HEALTH_LIST(10, 30, 1),
+		MOB_HEALTH_LIST(10, 20, 1),
 		MOB_RETREAT_DISTANCE_LIST(0, 2, 3),
 		MOB_RETREAT_DISTANCE_CHANGE_PER_TURN_CHANCE(100),
 		MOB_MINIMUM_DISTANCE_LIST(1, 2, 3), //teehee ~TK <3
@@ -707,7 +711,7 @@
 	wound_bonus = 0
 	bare_wound_bonus = 0
 	wound_falloff_tile = 0
-	
+
 	pixels_per_second = BULLET_SPEED_BASE
 	damage_falloff = BULLET_FALLOFF_DEFAULT_PISTOL_LIGHT
 
