@@ -712,16 +712,9 @@ GLOBAL_VAR_INIT(lathe_reports_done, 0)
 	circuit = /obj/item/circuitboard/machine/autolathe/ammo
 	stored_research = /datum/techweb/specialized/autounlocking/autolathe/ammo
 	categories = list(
-					"Handloaded Ammo",
-					"Handmade Magazines",
-					"Simple Ammo",
-					"Simple Magazines",
-					"Basic Ammo",
-					"Basic Magazines",
-					"Intermediate Ammo",
-					"Intermediate Magazines",
-					"Advanced Ammo",
-					"Advanced Magazines",
+					"Blackpowder Loads",
+					"Smokeless Loads",
+					"Military Loads",
 					"Materials"
 					)
 	allowed_materials = list(
@@ -1144,7 +1137,9 @@ GLOBAL_VAR_INIT(lathe_reports_done, 0)
 	var/list/ppl = list()
 	for(var/mob/m in view(15, get_turf(lathe)))
 		ppl += m
-	var/mob/M = pick(ppl)
+	var/mob/M
+	if(LAZYLEN(ppl))
+		M = pick(ppl)
 	if(M)
 		our_paper.throw_at(M, 100, 1, M, TRUE)
 	else

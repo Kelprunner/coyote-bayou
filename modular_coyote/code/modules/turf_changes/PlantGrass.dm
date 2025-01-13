@@ -32,8 +32,8 @@
 		if("plant")
 			thingtype = pickweight(GLOB.plant_type_weighted)
 			switch(thingtype)
-				if("medicinal")
-					randThing = pickweight(GLOB.medicinal_plant_list)
+//				if("medicinal")
+//					randThing = pickweight(GLOB.medicinal_plant_list)
 				if("tree")
 					randThing = pickweight(GLOB.tree_plant_list)
 				if("grass")
@@ -86,7 +86,6 @@
 		qdel(turfPlant)
 	. =  ..()
 
-#define OUTSIDE_JUNK_DISTRIBUTION list("nests" = 1, "salvage" = 2, "trash" = 2, "nothing" = 95)
 
 /turf/open/indestructible/ground/outside/dirt
 	spawnPlants = TRUE
